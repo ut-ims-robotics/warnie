@@ -222,12 +222,12 @@ void SpikedVisualCue::initBaseSpike()
   // Set the size of the base spike
   msgs::Vector3d* size = new msgs::Vector3d();
 
-  size->set_x( parent_size_ * scaling_factor_ * 0.6);
-  size->set_y( parent_size_ * scaling_factor_ * 0.6);
+  size->set_x( parent_size_ * scaling_factor_ * 1);
+  size->set_y( parent_size_ * scaling_factor_ * 1);
   size->set_z( parent_size_ * scaling_factor_ * 1.4);
 
   msgs::MeshGeom* mesh_geom = new msgs::MeshGeom();
-  mesh_geom->set_filename("/home/robert/catkin_ws/src/warnie/gazebo_plugins/visual_cue_plugin/models/cone_low.dae");
+  mesh_geom->set_filename("/home/robert/catkin_ws/src/warnie/gazebo_plugins/visual_cue_plugin/models/blade.dae");
   mesh_geom->set_allocated_scale(size);
 
   base_spike_.geometry_.set_type(msgs::Geometry_Type_MESH);
