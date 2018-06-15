@@ -1,0 +1,3 @@
+[submodule "robots/husky"]
+	path = robots/husky
+	url = https://github.com/husky/husky.git

@@ -1,0 +1,11 @@
+<launch>
+
+  <arg name="paused" default="false"/>
+
+  <!-- We resume the logic in empty_world.launch, changing only the name of the world to be launched -->
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="world_name" value="$(find visual_cue_plugin)/worlds/visual_cue_plugin.world"/>
+    <arg name="paused" value="$(arg paused)"/>
+  </include>
+
+</launch>
