@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="robot_namespace" default=""/>
+
+  <group ns="$(arg robot_namespace)">
+
+    <!-- Joystick driver -->
+    <node name="joy_node" pkg="joy" type="joy_node" output="screen"/>
+
+    <!-- Joystick to cmd_vel -->
+    <node name="joy_to_cmdvel" pkg="robotont_driver" type="robotont_teleop_joy"/>
+
+  </group>
+
+</launch>
