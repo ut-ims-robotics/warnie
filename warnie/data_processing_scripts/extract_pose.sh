@@ -31,7 +31,7 @@ fi
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 echo -e $RESET $GREEN $NL"Extracting pose information of" $BOLD$GAZEBO_OBJECT $RESET$GREEN"..."$RESET
-gz log -e -f $LOG_FILE_PATH --filter $GAZEBO_OBJECT.pose >> log_pose_tmp.xml
+gz log -e -f $LOG_FILE_PATH --filter $GAZEBO_OBJECT.pose $GAZEBO_OBJECT.velocity >> log_pose_tmp.xml
 
 # Check if the process was successful or not
 if [[ $? != 0 ]]; then
@@ -46,13 +46,26 @@ fi
 echo -e $RESET $GREEN $NL"Formating pose information to CSV format ..."$RESET
 python2.7 format_pose.py log_pose_tmp.xml $GAZEBO_OBJECT.csv
 
-# Remove the temporary file
-rm log_pose_tmp.xml
-
 # Check if the process was successful or not
 if [[ $? != 0 ]]; then
   echo -e $RED $BOLD"Failed to extract pose information from" $LOG_FILE_PATH". Exiting"$RESET
   exit
 fi
+
+# # # # # # # # # # # # # # # # # # # # #
+# Extract initial states of the objects
+# # # # # # # # # # # # # # # # # # # # #
+
+echo -e $RESET $GREEN $NL"Extracting initial states of the world objects ..."$RESET
+python2.7 format_objects.py log_pose_tmp.xml object_initial_states.csv
+
+# Check if the process was successful or not
+if [[ $? != 0 ]]; then
+  echo -e $RED $BOLD"Failed to extract initial state information from" $LOG_FILE_PATH". Exiting"$RESET
+  exit
+fi
+
+# Remove the temporary file
+rm log_pose_tmp.xml
 
 echo -e $RESET $GREEN $NL"Done"$RESET
