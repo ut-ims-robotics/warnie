@@ -65,6 +65,19 @@ if [[ $? != 0 ]]; then
   exit
 fi
 
+# # # # # # # # # # # # # # # # # # # # #
+# Run the data analysis
+# # # # # # # # # # # # # # # # # # # # #
+
+echo -e $RESET $GREEN $NL"Analyzing the data ..."$RESET
+python2.7 analyze_data.py object_initial_states.csv $GAZEBO_OBJECT.csv analyzed_data.csv
+
+# Check if the process was successful or not
+if [[ $? != 0 ]]; then
+  echo -e $RED $BOLD"Failed to analyze the data" $LOG_FILE_PATH". Exiting"$RESET
+  exit
+fi
+
 # Remove the temporary file
 rm log_pose_tmp.xml
 
