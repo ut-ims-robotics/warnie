@@ -31,7 +31,7 @@ fi
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 echo -e $RESET $GREEN $NL"Extracting pose information of" $BOLD$GAZEBO_OBJECT $RESET$GREEN"..."$RESET
-gz log -e -f $LOG_FILE_PATH --filter $GAZEBO_OBJECT.pose $GAZEBO_OBJECT.velocity >> log_pose_tmp.xml
+gz log -e -f $LOG_FILE_PATH --filter $GAZEBO_OBJECT.pose >> log_pose_tmp.xml
 
 # Check if the process was successful or not
 if [[ $? != 0 ]]; then

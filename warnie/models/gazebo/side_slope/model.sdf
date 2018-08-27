@@ -1,0 +1,57 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="side_slope">
+    <static>true</static>
+    <link name="slope_1">
+      <pose>0 0 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://side_slope/meshes/side_slope.dae</uri>
+            <scale>18 1.5 1.5</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://side_slope/meshes/side_slope.dae</uri>
+            <scale>18 1.5 1.5</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.7 0.7 0.7 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+
+    <link name="slope_2">
+      <pose>0 10.6 0 0 0 3.1416</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://side_slope/meshes/side_slope.dae</uri>
+            <scale>18 1.5 1.5</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://side_slope/meshes/side_slope.dae</uri>
+            <scale>18 1.5 1.5</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>0.7 0.7 0.7 1</ambient>
+          <diffuse>0.8 0.8 0.8 1</diffuse>
+          <specular>0.1 0.1 0.1 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>
