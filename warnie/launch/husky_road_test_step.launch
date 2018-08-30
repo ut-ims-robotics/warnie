@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="laser_enabled" default="true"/>
+  <arg name="kinect_enabled" default="false"/>
+  <arg name="joystick_enabled" default="false"/>
+  <arg name="robot_namespace" default="husky_warnie"/>
+
+  <include file="$(find warnie)/launch/road_test_step.launch" />
+
+  <include file="$(find husky_gazebo)/launch/spawn_husky.launch">
+    <arg name="robot_namespace" value="$(arg robot_namespace)"/>
+    <arg name="x" value="-17"/>
+    <arg name="laser_enabled" value="$(arg laser_enabled)"/>
+    <arg name="kinect_enabled" value="$(arg kinect_enabled)"/>
+    <arg name="urdf_extras" value="$(find warnie)/robot_extras/husky/husky_camera.urdf.xacro"/>
+  </include>
+
+  <include file="$(find warnie)/launch/joystick.launch" if="$(arg joystick_enabled)">
+    <arg name="robot_namespace" value="$(arg robot_namespace)"/>
+  </include>
+
+</launch>

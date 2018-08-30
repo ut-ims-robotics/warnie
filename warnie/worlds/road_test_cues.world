@@ -494,15 +494,15 @@
       </link>
     </model>
     <state world_name='default'>
-      <sim_time>1005 92000000</sim_time>
-      <real_time>156 321412868</real_time>
-      <wall_time>1535381933 836084403</wall_time>
-      <iterations>153489</iterations>
+      <sim_time>1125 220000000</sim_time>
+      <real_time>128 197989547</real_time>
+      <wall_time>1535446006 872837331</wall_time>
+      <iterations>120128</iterations>
       <model name='dirt_road'>
-        <pose frame=''>8.68385 -26.45 0 0 -0 0</pose>
+        <pose frame=''>-3.74816 -26.3668 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>8.68385 -26.45 0 0 -0 0</pose>
+          <pose frame=''>-3.74816 -26.3668 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -519,70 +519,70 @@
         </link>
       </model>
       <model name='road_aged_tile'>
-        <pose frame=''>8.87876 8.3934 0 0 -0 0</pose>
+        <pose frame=''>-3.72583 8.4555 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>8.87876 8.3934 0 0 -0 0</pose>
+          <pose frame=''>-3.72583 8.4555 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='road_dashed_two_white'>
-        <pose frame=''>8.78675 -19.7738 0 0 -0 0</pose>
+        <pose frame=''>-3.50925 -19.7999 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>8.78675 -19.7738 0 0 -0 0</pose>
+          <pose frame=''>-3.50925 -19.7999 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='road_illusion_slab'>
-        <pose frame=''>9.08108 14.5058 0 0 -0 0</pose>
+        <pose frame=''>-3.7402 14.4033 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>9.08108 14.5058 0 0 -0 0</pose>
+          <pose frame=''>-3.7402 14.4033 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='road_light_gravel'>
-        <pose frame=''>8.76577 1.8144 0 0 -0 0</pose>
+        <pose frame=''>-3.61059 1.9679 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>8.76577 1.8144 0 0 -0 0</pose>
+          <pose frame=''>-3.61059 1.9679 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='road_light_grid'>
-        <pose frame=''>9.15052 -12.5821 0 0 -0 0</pose>
+        <pose frame=''>-3.51066 -12.6398 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>9.15052 -12.5821 0 0 -0 0</pose>
+          <pose frame=''>-3.51066 -12.6398 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='road_light_tile'>
-        <pose frame=''>9.08345 -5.23555 0 0 -0 0</pose>
+        <pose frame=''>-3.47752 -5.22727 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>9.08345 -5.23555 0 0 -0 0</pose>
+          <pose frame=''>-3.47752 -5.22727 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='road_plain_white'>
-        <pose frame=''>8.80664 -33.3193 0 0 -0 0</pose>
+        <pose frame=''>-3.86037 -33.2192 0 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>8.80664 -33.3193 0 0 -0 0</pose>
+          <pose frame=''>-3.86037 -33.2192 0 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -669,80 +669,80 @@
         </link>
       </model>
       <model name='unit_box_clone_6'>
-        <pose frame=''>4.96093 15.6812 0.26 0 0 -0.788592</pose>
+        <pose frame=''>4.96093 15.6812 0.26 0 0 -0.788595</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>4.96093 15.6812 0.26 0 0 -0.788592</pose>
+          <pose frame=''>4.96093 15.6812 0.26 0 0 -0.788595</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='unit_box_evil'>
+        <pose frame=''>5.74966 -32.1601 0.26 0 0 -0.801147</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>5.74966 -32.1601 0.26 0 0 -0.801147</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_evil_'>
-        <pose frame=''>5.0678 9.61365 0.259998 -9e-06 2e-06 -0.788597</pose>
+        <pose frame=''>5.0678 9.61365 0.26 0 0 -0.7886</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>5.0678 9.61365 0.259998 -9e-06 2e-06 -0.788597</pose>
+          <pose frame=''>5.0678 9.61365 0.26 0 0 -0.7886</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.002801 0.92396 -7.40503 2.5887 0.012071 -0.000336</acceleration>
-          <wrench>0.002801 0.92396 -7.40503 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_evil__0'>
-        <pose frame=''>4.96728 2.97767 0.260001 3e-06 -0 -0.788596</pose>
+        <pose frame=''>4.96728 2.97767 0.26 0 0 -0.788596</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>4.96728 2.97767 0.260001 3e-06 -0 -0.788596</pose>
+          <pose frame=''>4.96728 2.97767 0.26 0 0 -0.788596</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>3.02903 3.01043 5.85897 0.525071 -0.449808 -0.000624</acceleration>
-          <wrench>3.02903 3.01043 5.85897 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_evil__1'>
-        <pose frame=''>5.08083 -3.94841 0.259997 -3e-06 7e-06 -0.788596</pose>
+        <pose frame=''>5.08083 -3.94841 0.26 0 0 -0.788597</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>5.08083 -3.94841 0.259997 -3e-06 7e-06 -0.788596</pose>
+          <pose frame=''>5.08083 -3.94841 0.26 0 0 -0.788597</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>1.18157 -0.003775 -6.7365 0.015106 -1.55692 -2e-06</acceleration>
-          <wrench>1.18157 -0.003775 -6.7365 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_evil__2'>
-        <pose frame=''>5.29708 -11.375 0.260001 5e-06 -0 -0.788595</pose>
+        <pose frame=''>5.29708 -11.375 0.26 0 0 -0.788595</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>5.29708 -11.375 0.260001 5e-06 -0 -0.788595</pose>
+          <pose frame=''>5.29708 -11.375 0.26 0 0 -0.788595</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>2.86036 4.17323 8.4252 2.15639 -1.12581 5e-05</acceleration>
-          <wrench>2.86036 4.17323 8.4252 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_evil__3'>
-        <pose frame=''>5.28266 -18.6534 0.260001 -3e-06 0 -0.788594</pose>
+        <pose frame=''>5.28266 -18.6534 0.26 0 0 -0.788595</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>5.28266 -18.6534 0.260001 -3e-06 0 -0.788594</pose>
+          <pose frame=''>5.28266 -18.6534 0.26 0 0 -0.788595</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-3.02652 -3.00767 5.8452 -0.536019 0.460182 -0.00064</acceleration>
-          <wrench>-3.02652 -3.00767 5.8452 0 -0 0</wrench>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_box_evil__4'>
-        <pose frame=''>5.3249 -25.2939 0.259997 3e-06 -7e-06 -0.788594</pose>
+        <pose frame=''>5.3249 -25.2939 0.26 0 0 -0.788596</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>5.3249 -25.2939 0.259997 3e-06 -7e-06 -0.788594</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.18156 0.003782 -6.73655 -0.015083 1.55703 1.6e-05</acceleration>
-          <wrench>-1.18156 0.003782 -6.73655 0 -0 0</wrench>
-        </link>
-      </model>
-      <model name='unit_box_evil'>
-        <pose frame=''>5.74966 -32.1601 0.26 0 0 -0.801143</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>5.74966 -32.1601 0.26 0 0 -0.801143</pose>
+          <pose frame=''>5.3249 -25.2939 0.26 0 0 -0.788596</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -754,7 +754,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>22.7653 -31.3794 10.5381 0 0.581797 2.92014</pose>
+        <pose frame=''>13.4922 -35.4253 4.46494 -0 0.753797 2.85616</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
