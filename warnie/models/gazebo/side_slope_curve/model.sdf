@@ -1,22 +1,22 @@
 <?xml version="1.0" ?>
 <sdf version="1.6">
-  <model name="side_slope">
+  <model name="side_slope_curve">
     <static>true</static>
-    <link name="slope_1">
+    <link name="slope_curve_l">
       <pose>0 0 0 0 0 0</pose>
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://side_slope/meshes/side_slope.dae</uri>
-            <scale>18 1.5 1.5</scale>
+            <uri>model://side_slope_curve/meshes/side_slope_curve_l.dae</uri>
+            <scale>1.5 1.5 1.5</scale>
           </mesh>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://side_slope/meshes/side_slope.dae</uri>
-            <scale>18 1.5 1.5</scale>
+            <uri>model://side_slope_curve/meshes/side_slope_curve_l.dae</uri>
+            <scale>1.5 1.5 1.5</scale>
           </mesh>
         </geometry>
         <material>
@@ -28,21 +28,21 @@
       </visual>
     </link>
 
-    <link name="slope_2">
-      <pose>0 12.3 0 0 0 3.1416</pose>
+    <link name="slope_curve_r">
+      <pose>0 12.3 0 0 0 0</pose>
       <collision name="collision">
         <geometry>
           <mesh>
-            <uri>model://side_slope/meshes/side_slope.dae</uri>
-            <scale>18 1.5 1.5</scale>
+            <uri>model://side_slope_curve/meshes/side_slope_curve_r.stl</uri>
+            <scale>1.5 1.5 1.5</scale>
           </mesh>
         </geometry>
       </collision>
       <visual name="visual">
         <geometry>
           <mesh>
-            <uri>model://side_slope/meshes/side_slope.dae</uri>
-            <scale>18 1.5 1.5</scale>
+            <uri>model://side_slope_curve/meshes/side_slope_curve_r.stl</uri>
+            <scale>1.5 1.5 1.5</scale>
           </mesh>
         </geometry>
         <material>

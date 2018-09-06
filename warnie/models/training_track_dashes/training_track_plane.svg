@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="219.93175mm"
+   height="174.97778mm"
+   viewBox="0 0 779.28572 620.00002"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   inkscape:export-filename="/home/robert/catkin_ws/src/warnie/warnie/models/training_track_dashes/training_track_plane.png"
+   inkscape:export-xdpi="757.5"
+   inkscape:export-ydpi="757.5"
+   sodipodi:docname="training_track_plane.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="370.84783"
+     inkscape:cy="380.54565"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1916"
+     inkscape:window-height="1041"
+     inkscape:window-x="0"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="path"
+     transform="translate(-97.14286,-175.93364)">
+    <rect
+       style="fill:#aaaaaa;fill-opacity:1;stroke:none;stroke-width:1.60000002;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:6.4000001, 12.80000019;stroke-dashoffset:0;stroke-opacity:1"
+       id="rect4175"
+       width="752.61652"
+       height="603.35187"
+       x="112.65048"
+       y="185.00313" />
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#2f2f2f;stroke-width:1.60000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:6.4000001,12.80000019;stroke-dashoffset:0"
+       d="m 641.42857,329.50506 0,312.85714 c 0,0 0.71429,77.14286 -64.28571,77.14286 l -183.57143,0 c 0,0 -62.65109,-1.34293 -62.65109,-79.95718 0,-75.04282 74.07966,-68.61425 74.07966,-68.61425 0,0 82.85714,-6.42857 82.85714,-81.42857 0,-75 -61.42857,-81.42857 -61.42857,-81.42857 l -179.28571,0 c 0,0 -72.14286,-2.85715 -72.14286,-76.42857 0,-70.71429 58.57143,-77.14286 58.57143,-77.14286 l 305.71428,0 c 0,0 102.14286,-11.42857 102.14286,75 z"
+       id="path4150"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="scscscsccsccs" />
+  </g>
+</svg>

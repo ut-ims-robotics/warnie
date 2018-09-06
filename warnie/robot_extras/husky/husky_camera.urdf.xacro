@@ -12,6 +12,28 @@
     <child link="2d_camera_link" />
   </joint>
 
+  <!-- bumper box -->
+  <link name="bumper_box_link">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://warnie/robot_extras/husky/husky_bumper_box/husky_bumper_box.stl" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://warnie/robot_extras/husky/husky_bumper_box/husky_bumper_box.stl" />
+      </geometry>
+    </collision>
+  </link>
+
+  <joint name="bumper_box_joint" type="fixed">
+    <origin xyz="0 0 0.05" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child link="bumper_box_link" />
+  </joint>
+
   <!-- camera -->
   <gazebo reference="2d_camera_link">
     <sensor type="camera" name="camera1">

@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+<sdf version="1.5">
+  <model name="training_track_plane">
+    <pose>0 0 0 0 0 3.1416</pose>
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>30 24</size>
+          </plane>
+        </geometry>
+        <surface>
+          <contact>
+            <collide_bitmask>65535</collide_bitmask>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>100</mu>
+              <mu2>50</mu2>
+            </ode>
+            <torsional>
+              <ode/>
+            </torsional>
+          </friction>
+          <bounce/>
+        </surface>
+        <max_contacts>10</max_contacts>
+      </collision>
+      <visual name="visual">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>30 24</size>
+          </plane>
+        </geometry>
+        <material>
+          <script>
+            <uri>model://training_track_plane/materials/scripts</uri>
+            <uri>model://training_track_plane/materials/textures</uri>
+            <name>TrainingTrackPlane</name>
+          </script>
+        </material>
+      </visual>
+    </link>
+  </model>
+</sdf>

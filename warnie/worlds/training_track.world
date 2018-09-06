@@ -30,8 +30,8 @@
             </contact>
             <friction>
               <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
+                <mu>1</mu>
+                <mu2>1</mu2>
               </ode>
               <torsional>
                 <ode/>
@@ -125,10 +125,10 @@
       <pose frame=''>0.098521 -0.127477 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>1515 228000000</sim_time>
-      <real_time>152 854471399</real_time>
-      <wall_time>1535728293 579593280</wall_time>
-      <iterations>151741</iterations>
+      <sim_time>1603 523000000</sim_time>
+      <real_time>88 863463260</real_time>
+      <wall_time>1536235578 557430859</wall_time>
+      <iterations>88295</iterations>
       <model name='blank_block'>
         <pose frame=''>6 6 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -220,10 +220,10 @@
         </link>
       </model>
       <model name='ground_plane'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
+        <pose frame=''>0 0 -0.01 0 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='link'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
+          <pose frame=''>0 0 -0.01 0 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -234,6 +234,16 @@
         <scale>1 1 1</scale>
         <link name='straight_block'>
           <pose frame=''>-6 12 0 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='training_track_plane'>
+        <pose frame=''>-5.90804 2.96903 0 0 0 -3.14159</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose frame=''>-5.90804 2.96903 0 0 0 -3.14159</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 0 0 -0 0</acceleration>
           <wrench>0 0 0 0 -0 0</wrench>
@@ -320,13 +330,13 @@
         </link>
       </model>
       <model name='unit_box'>
-        <pose frame=''>0.012751 -5.86109 0.499996 6e-06 7e-06 0.00946</pose>
+        <pose frame=''>0.012751 -5.86109 0.499996 7e-06 7e-06 0.009645</pose>
         <scale>0.64607 0.606298 1</scale>
         <link name='link'>
-          <pose frame=''>0.012751 -5.86109 0.499996 6e-06 7e-06 0.00946</pose>
+          <pose frame=''>0.012751 -5.86109 0.499996 7e-06 7e-06 0.009645</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0.455272 -0.416135 -8.68282 0.763048 0.818632 -0.006027</acceleration>
-          <wrench>0.455272 -0.416135 -8.68282 0 -0 0</wrench>
+          <acceleration>0.236475 -0.217748 -9.19633 0.433437 0.471158 0.00016</acceleration>
+          <wrench>0.236475 -0.217748 -9.19633 0 -0 0</wrench>
         </link>
       </model>
       <model name='unit_cylinder'>
@@ -515,7 +525,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>-10.8479 26.8901 13.2342 0 0.471286 -1.37029</pose>
+        <pose frame=''>-14.7511 0.001753 68.419 0 1.5458 -0.05429</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -2266,6 +2276,55 @@
             <script>
               <name>Gazebo/Grey</name>
               <uri>file://media/materials/scripts/gazebo.material</uri>
+            </script>
+          </material>
+        </visual>
+        <self_collide>0</self_collide>
+        <kinematic>0</kinematic>
+      </link>
+    </model>
+    <model name='training_track_plane'>
+      <pose frame=''>-5.90804 2.96903 0 0 -0 -3.14159</pose>
+      <static>1</static>
+      <link name='link'>
+        <collision name='collision'>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>30 24</size>
+            </plane>
+          </geometry>
+          <surface>
+            <contact>
+              <collide_bitmask>65535</collide_bitmask>
+              <ode/>
+            </contact>
+            <friction>
+              <ode>
+                <mu>100</mu>
+                <mu2>50</mu2>
+              </ode>
+              <torsional>
+                <ode/>
+              </torsional>
+            </friction>
+            <bounce/>
+          </surface>
+          <max_contacts>10</max_contacts>
+        </collision>
+        <visual name='visual'>
+          <cast_shadows>0</cast_shadows>
+          <geometry>
+            <plane>
+              <normal>0 0 1</normal>
+              <size>30 24</size>
+            </plane>
+          </geometry>
+          <material>
+            <script>
+              <uri>model://training_track_plane/materials/scripts</uri>
+              <uri>model://training_track_plane/materials/textures</uri>
+              <name>TrainingTrackPlane</name>
             </script>
           </material>
         </visual>
