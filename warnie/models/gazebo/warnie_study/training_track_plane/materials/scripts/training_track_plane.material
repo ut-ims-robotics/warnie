@@ -1,0 +1,23 @@
+material TrainingTrackPlane
+{
+  technique
+  {
+    pass
+    {
+      ambient 0.8 0.8 0.8 1.0
+			diffuse 0.8 0.8 0.8 1.0
+			specular 0.2 0.2 0.2 1.0 12.5      
+
+      texture_unit
+      {
+        // Relative to the location of the material script
+        texture ../textures/training_track_plane.png
+        // Repeat the texture over the surface (4 per face)
+        scale 1 1
+
+        filtering anistropic
+				max_anisotropy 16
+      }
+    }
+  }
+}
