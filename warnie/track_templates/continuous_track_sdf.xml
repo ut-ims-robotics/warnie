@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+
+<f_template extension=".sdf">
+
+  <arg name="track_name" default="continuous_track" />
+  <arg name="static" default="true" />
+  <arg name="traps" default="" />
+
+  <body>
+
+<![CDATA[<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="$(arg track_name)">
+    <static>$(arg static)</static>
+    
+$(arg traps)
+    
+  </model>
+</sdf>]]>
+
+  </body>
+
+</f_template>

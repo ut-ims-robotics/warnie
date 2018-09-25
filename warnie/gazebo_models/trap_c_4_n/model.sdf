@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="trap_cont_4_n">
+    <static>false</static>
+     
+    <include>
+      <name>normal_cue_1</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 -2.20 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>normal_cue_2</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 -1.65 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>normal_cue_3</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 -1.1 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>normal_cue_4</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 1.65 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>normal_cue_5</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 2.2 0.25 0 0 0</pose>
+    </include>
+    
+  </model>
+</sdf>

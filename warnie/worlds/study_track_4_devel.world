@@ -13,53 +13,6 @@
       </attenuation>
       <direction>-0.5 0.1 -0.9</direction>
     </light>
-    <model name='ground_plane'>
-      <static>1</static>
-      <link name='link'>
-        <collision name='collision'>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>100 100</size>
-            </plane>
-          </geometry>
-          <surface>
-            <contact>
-              <collide_bitmask>65535</collide_bitmask>
-              <ode/>
-            </contact>
-            <friction>
-              <ode>
-                <mu>100</mu>
-                <mu2>50</mu2>
-              </ode>
-              <torsional>
-                <ode/>
-              </torsional>
-            </friction>
-            <bounce/>
-          </surface>
-          <max_contacts>10</max_contacts>
-        </collision>
-        <visual name='visual'>
-          <cast_shadows>0</cast_shadows>
-          <geometry>
-            <plane>
-              <normal>0 0 1</normal>
-              <size>100 100</size>
-            </plane>
-          </geometry>
-          <material>
-            <script>
-              <uri>file://media/materials/scripts/gazebo.material</uri>
-              <name>Gazebo/Grey</name>
-            </script>
-          </material>
-        </visual>
-        <self_collide>0</self_collide>
-        <kinematic>0</kinematic>
-      </link>
-    </model>
     <gravity>0 0 -9.8</gravity>
     <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
     <atmosphere type='adiabatic'/>
@@ -70,7 +23,7 @@
     </physics>
     <scene>
       <ambient>0.4 0.4 0.4 1</ambient>
-      <background>0.7 0.7 0.7 1</background>
+      <background>0.9 0.9 0.9 1</background>
       <shadows>1</shadows>
     </scene>
     <spherical_coordinates>
@@ -3871,20 +3824,10 @@
       </link>
     </model>
     <state world_name='default'>
-      <sim_time>4010 232000000</sim_time>
-      <real_time>4062 847674107</real_time>
-      <wall_time>1536938553 750742292</wall_time>
-      <iterations>4010232</iterations>
-      <model name='ground_plane'>
-        <pose frame=''>0 0 0 0 -0 0</pose>
-        <scale>1 1 1</scale>
-        <link name='link'>
-          <pose frame=''>0 0 0 0 -0 0</pose>
-          <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 0 0 0 -0 0</acceleration>
-          <wrench>0 0 0 0 -0 0</wrench>
-        </link>
-      </model>
+      <sim_time>4282 101000000</sim_time>
+      <real_time>176 776562245</real_time>
+      <wall_time>1537185161 929448928</wall_time>
+      <iterations>169086</iterations>
       <model name='study_track'>
         <pose frame=''>22.3026 5.3182 0 0 -0 0</pose>
         <scale>1 1 1</scale>
@@ -4044,56 +3987,56 @@
         </link>
       </model>
       <model name='trap_cont_1_attr_0'>
-        <pose frame=''>113.29 5.42056 1.1e-05 7e-06 -7e-06 0</pose>
+        <pose frame=''>117.912 5.34087 1.1e-05 7e-06 -7e-06 -1e-06</pose>
         <scale>1 1 1</scale>
         <link name='attracting_cue_0::vis_cue_attract'>
-          <pose frame=''>113.29 7.90056 0.249994 7e-06 -7e-06 0</pose>
+          <pose frame=''>117.912 7.81856 0.249997 7e-06 7e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
         <link name='normal_cue_0::vis_cue_normal'>
-          <pose frame=''>113.29 2.94056 0.249994 7e-06 -7e-06 0</pose>
+          <pose frame=''>117.912 2.86086 0.249994 7e-06 -7e-06 -1e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
         <link name='normal_cue_1::vis_cue_normal'>
-          <pose frame=''>113.29 3.67556 0.249994 7e-06 -7e-06 0</pose>
+          <pose frame=''>117.912 3.59356 0.249997 7e-06 -7e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
         <link name='normal_cue_2::vis_cue_normal'>
-          <pose frame=''>113.29 4.41056 0.249994 7e-06 -7e-06 0</pose>
+          <pose frame=''>117.912 4.32856 0.249997 7e-06 -7e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='trap_cont_2_ubias'>
-        <pose frame=''>72.3763 5.34479 -2.4e-05 -7e-06 7e-06 0</pose>
+        <pose frame=''>77.5502 5.42584 -2.4e-05 -7e-06 7e-06 0</pose>
         <scale>1 1 1</scale>
         <link name='attracting_cue_0::vis_cue_attract'>
-          <pose frame=''>72.3763 2.8648 0.249994 -7e-06 7e-06 0</pose>
+          <pose frame=''>77.5502 2.94584 0.249994 -7e-06 7e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
         <link name='attracting_cue_1::vis_cue_attract'>
-          <pose frame=''>72.6763 3.4998 0.249992 -2e-06 2e-06 -0</pose>
+          <pose frame=''>77.8502 3.58084 0.249995 -2e-06 2e-06 -0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
         <link name='repelling_cue_0::vis_cue_repel'>
-          <pose frame=''>72.6763 7.18979 0.249997 7e-06 -7e-06 0</pose>
+          <pose frame=''>77.8502 7.27083 0.249993 -6e-06 5e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
         <link name='repelling_cue_1::vis_cue_repel'>
-          <pose frame=''>72.3763 7.82479 0.249997 7e-06 -7e-06 0</pose>
+          <pose frame=''>77.5502 7.90583 0.249994 7e-06 -7e-06 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
@@ -4370,20 +4313,20 @@
         </link>
       </model>
       <model name='vis_cue_repel'>
-        <pose frame=''>84.8212 5.51939 0.249996 -7e-06 7e-06 0</pose>
+        <pose frame=''>153.678 5.03385 0.249993 6e-06 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='vis_cue_repel'>
-          <pose frame=''>84.8212 5.51939 0.249996 -7e-06 7e-06 0</pose>
+          <pose frame=''>153.678 5.03385 0.249993 6e-06 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='vis_cue_repel_clone_clone'>
-        <pose frame=''>125.576 7.64734 0.249996 -7e-06 7e-06 0</pose>
+        <pose frame=''>151.02 5.72361 0.249997 6e-06 -0 0</pose>
         <scale>1 1 1</scale>
         <link name='vis_cue_repel'>
-          <pose frame=''>125.576 7.64734 0.249996 -7e-06 7e-06 0</pose>
+          <pose frame=''>151.02 5.72361 0.249997 6e-06 -0 0</pose>
           <velocity>0 0 0 0 -0 0</velocity>
           <acceleration>0 0 -9.8 0 -0 0</acceleration>
           <wrench>0 0 -9.8 0 -0 0</wrench>
@@ -4405,7 +4348,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose frame=''>133.413 20.4803 86.5022 0 0.913799 -2.63184</pose>
+        <pose frame=''>111.992 44.9733 26.8914 0 0.729799 -1.67585</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>

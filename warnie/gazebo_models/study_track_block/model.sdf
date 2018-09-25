@@ -1,0 +1,34 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="study_track_block">
+    <static>true</static>
+    <include>
+      <name>slopes</name>
+      <uri>model://side_slope</uri>
+    </include>
+
+    <include>
+      <name>dash_l</name>
+      <uri>model://road_dashed_two_white_plane</uri>
+      <pose>0 -3.708 0 0 0 1.570796</pose>
+    </include>
+    <include>
+      <name>dash_r</name>
+      <uri>model://road_dashed_two_white_plane</uri>
+      <pose>0 3.708 0 0 0 1.570796</pose>
+    </include>
+
+    <link name="transparent_plane">
+      <collision name="collision">
+        <geometry>
+          <plane>
+            <normal>0 0 1</normal>
+            <size>56 2.8</size>
+          </plane>
+        </geometry>
+        <max_contacts>10</max_contacts>
+      </collision>
+    </link>
+    
+  </model>
+</sdf>

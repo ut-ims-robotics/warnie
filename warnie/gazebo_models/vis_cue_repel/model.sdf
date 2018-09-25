@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="vis_cue_repel">
+    <static>false</static>
+    <pose>0 0 0.25 0 0 0</pose>
+    <link name='vis_cue_repel'>
+      <inertial>
+        <mass>1</mass>
+        <inertia>
+          <ixx>0.166667</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.166667</iyy>
+          <iyz>0</iyz>
+          <izz>0.166667</izz>
+        </inertia>
+      </inertial>
+      <collision name='collision'>
+        <geometry>
+          <box>
+            <size>0.5 0.5 0.5</size>
+          </box>
+        </geometry>
+        <max_contacts>10</max_contacts>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <bounce/>
+          <friction>
+            <torsional>
+              <ode/>
+            </torsional>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='box_visual'>
+        <geometry>
+          <box>
+            <size>0.5 0.5 0.5</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.85 0.85 0.85 1</ambient>
+          <diffuse>0.85 0.85 0.85 1</diffuse>
+          <specular>0.15 0.15 0.15 1</specular>
+          <emissive>0 0 0 0</emissive>
+        </material>
+      </visual>
+      <visual name='cue_visual'>
+        <geometry>
+          <mesh>
+            <uri>model://repelling_cue_2.dae</uri>
+            <scale>0.85 0.85 0.85</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0.3 0.2 0.2</ambient>
+          <diffuse>1 0.3 0.2 0.2</diffuse>
+          <specular>1 0.3 0.2 0.5</specular>
+          <emissive>0.5 0 0 0.1</emissive>
+        </material>
+      </visual>
+      <self_collide>0</self_collide>
+      <kinematic>0</kinematic>
+    </link>
+  </model>
+</sdf>
