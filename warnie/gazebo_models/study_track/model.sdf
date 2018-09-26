@@ -23,11 +23,20 @@
       <uri>model://study_track_block</uri>
       <pose>112 0 0 0 0 0</pose>
     </include>
-    
+    <include>
+      <name>track_3</name>
+      <uri>model://study_track_block</uri>
+      <pose>168 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>track_4</name>
+      <uri>model://study_track_block</uri>
+      <pose>224 0 0 0 0 0</pose>
+    </include>    
     <include>
       <name>end_cap</name>
       <uri>model://study_track_end_block</uri>
-      <pose>140 0 0 0 0 3.1416</pose>
+      <pose>252 0 0 0 0 3.1416</pose>
     </include>
 
     <!--include>

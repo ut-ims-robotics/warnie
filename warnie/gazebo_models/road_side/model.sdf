@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="Road Side">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+        <geometry>
+          <mesh>
+            <uri>model://road_side/meshes/road_side.dae</uri>
+            <scale>1 7 15</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <mesh>
+            <uri>model://road_side/meshes/road_side.dae</uri>
+            <scale>1 7 15</scale>
+          </mesh>
+        </geometry>
+        <material> <!-- Wheel material -->
+          <ambient>0.0 0.0 0.1 1</ambient>
+          <diffuse>0.0 0.1 0.0 1</diffuse>
+          <specular>0 0 0 0</specular>
+          <emissive>0 0 0 1</emissive>
+        </material> <!-- End wheel material -->
+      </visual>
+    </link>
+  </model>
+</sdf>

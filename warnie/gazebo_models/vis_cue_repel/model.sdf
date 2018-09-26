@@ -48,17 +48,48 @@
           <emissive>0 0 0 0</emissive>
         </material>
       </visual>
-      <visual name='cue_visual'>
+      <visual name='cue_visual_1'>
+        <pose>0 0 0 1.5708 0 1.5708</pose>
         <geometry>
           <mesh>
-            <uri>model://repelling_cue_2.dae</uri>
-            <scale>0.85 0.85 0.85</scale>
+            <uri>model://vis_cue_repel/meshes/repelling_cue_8_spike_2.stl</uri>
+            <scale>0.42 0.42 0.42</scale>
           </mesh>
         </geometry>
         <material>
-          <ambient>1 0.3 0.2 0.2</ambient>
-          <diffuse>1 0.3 0.2 0.2</diffuse>
-          <specular>1 0.3 0.2 0.5</specular>
+          <ambient>1 0.3 0.2 0.6</ambient>
+          <diffuse>1 0.3 0.2 0.6</diffuse>
+          <specular>1 0.3 0.2 0.7</specular>
+          <emissive>0.5 0 0 0.1</emissive>
+        </material>
+      </visual>
+      <visual name='cue_visual_2'>
+        <pose>0 0 0 1.5708 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://vis_cue_repel/meshes/repelling_cue_8_spike_2.stl</uri>
+            <scale>0.42 0.42 0.42</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0.3 0.2 0.6</ambient>
+          <diffuse>1 0.3 0.2 0.6</diffuse>
+          <specular>1 0.3 0.2 0.7</specular>
+          <emissive>0.5 0 0 0.1</emissive>
+        </material>
+      </visual>
+      <visual name='cue_visual_3'>
+        <pose>0 0 0 0 0 0</pose>
+        <geometry>
+          <mesh>
+            <uri>model://vis_cue_repel/meshes/repelling_cue_8_spike_2.stl</uri>
+            <scale>0.42 0.42 0.42</scale>
+          </mesh>
+        </geometry>
+        <material>
+          <ambient>1 0.3 0.2 0.6</ambient>
+          <diffuse>1 0.3 0.2 0.6</diffuse>
+          <specular>1 0.3 0.2 0.7</specular>
           <emissive>0.5 0 0 0.1</emissive>
         </material>
       </visual>

@@ -1,0 +1,33 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="trap_cont_4_r_2_m">
+    <static>false</static>
+     
+    <include>
+      <name>normal_cue_3</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 2.20 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>normal_cue_2</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 1.65 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>normal_cue_1</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 1.1 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>normal_cue_0</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 0.55 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>repelling_cue_0</name>
+      <uri>model://vis_cue_repel</uri>
+      <pose>0 -2.2 0.25 0 0 0</pose>
+    </include>
+    
+  </model>
+</sdf>

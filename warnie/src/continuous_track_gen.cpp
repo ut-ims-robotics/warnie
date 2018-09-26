@@ -10,26 +10,36 @@
 #include <iomanip>
 #include <boost/filesystem.hpp>
 
-const std::vector<std::string> continuous_trap_names = {
-  "trap_c_4_a_1",
-  "trap_c_4_a_1_m",
-  "trap_c_4_a_2",
-  "trap_c_4_a_2_m",
-  "trap_c_4_r_1",
-  "trap_c_4_r_1_m",
-  "trap_c_4_r_2",
-  "trap_c_4_r_2_m",
-  "trap_c_4_n",
-  "trap_c_4_n_m",
-  "vis_cue_normal",
-  "vis_cue_attract",
-  "vis_cue_repel"
+typedef std::vector<std::pair<std::string, float>> pairvec;
+
+const pairvec continuous_trap_data = {
+  {"trap_c_4_a_1", 0},
+  {"trap_c_4_a_1_m", 0},
+  {"trap_c_4_a_2", 0},
+  {"trap_c_4_a_2_m", 0},
+  {"trap_c_4_a_3", 0},
+  {"trap_c_4_a_3_m", 0},
+  {"trap_c_4_a_4", 0},
+  {"trap_c_4_a_4_m", 0},
+  {"trap_c_4_r_1", 0},
+  {"trap_c_4_r_1_m", 0},
+  {"trap_c_4_r_2", 0},
+  {"trap_c_4_r_2_m", 0},
+  {"trap_c_4_r_3", 0},
+  {"trap_c_4_r_3_m", 0},
+  {"trap_c_4_r_4", 0},
+  {"trap_c_4_r_4_m", 0},
+  {"trap_c_4_n", 0},
+  {"trap_c_4_n_m", 0},
+  {"vis_cue_normal", 0.25},
+  {"vis_cue_attract", 0.25},
+  {"vis_cue_repel", 0.25}
 };
 
 uint8_t nr_of_cont_tracks = 5;
 const float track_start_dist = 10;
 const float gate_trap_dist = 3;
-const float gate_gate_dist = 7;
+const float gate_gate_dist = 10;
 
 /*
  * MAIN
@@ -71,11 +81,11 @@ int main(int argc, char **argv)
     {
       std::string traps;
       std::string track_name = "continuous_track_" + std::to_string(i);
-      std::vector<std::string> c_trap_names_cpy = continuous_trap_names;
-      std::shuffle(std::begin(c_trap_names_cpy), std::end(c_trap_names_cpy), rng);
+      pairvec c_trap_data_cpy = continuous_trap_data;
+      std::shuffle(std::begin(c_trap_data_cpy), std::end(c_trap_data_cpy), rng);
 
       // Insert the traps to the continuous track
-      for(uint8_t k=0; k<c_trap_names_cpy.size(); k++)
+      for(uint8_t k=0; k<c_trap_data_cpy.size(); k++)
       {
         // Add the gate model
         float gate_x = track_start_dist + gate_gate_dist*k;
@@ -84,7 +94,7 @@ int main(int argc, char **argv)
 
         t_import_model.setArgument("model_name", "study_track_gate_block");
         t_import_model.setArgument("x", gate_x_stream.str());
-        t_import_model.setArgument("static", "true");
+        t_import_model.setArgument("z", "0");
         traps += t_import_model.processTemplate();
 
         // Add trap model
@@ -92,9 +102,9 @@ int main(int argc, char **argv)
         std::stringstream trap_x_stream;
         trap_x_stream << std::fixed << std::setprecision(1) << trap_x;
 
-        t_import_model.setArgument("model_name", c_trap_names_cpy.at(k));
+        t_import_model.setArgument("model_name", c_trap_data_cpy.at(k).first);
         t_import_model.setArgument("x", trap_x_stream.str());
-        t_import_model.setArgument("static", "false");
+        t_import_model.setArgument("z", std::to_string(c_trap_data_cpy.at(k).second));
         traps += t_import_model.processTemplate();
       }
 
