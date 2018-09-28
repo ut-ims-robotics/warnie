@@ -18,7 +18,7 @@
       <collision name='collision'>
         <geometry>
           <box>
-            <size>0.45 0.45 0.45</size>
+            <size>0.5 0.5 0.5</size>
           </box>
         </geometry>
         <max_contacts>10</max_contacts>
@@ -38,7 +38,7 @@
       <visual name='box_visual'>
         <geometry>
           <box>
-            <size>0.45 0.45 0.45</size>
+            <size>0.5 0.5 0.5</size>
           </box>
         </geometry>
         <material>
@@ -52,14 +52,14 @@
         <geometry>
           <mesh>
             <uri>model://vis_cue_attract/meshes/sphere.stl</uri>
-            <scale>0.8 0.8 0.8</scale>
+            <scale>0.9 0.9 0.9</scale>
           </mesh>
         </geometry>
         <material>
-          <ambient>0 1 0 0.15</ambient>
-          <diffuse>0 1 0 0.25</diffuse>
-          <specular>0 1 0 0.25</specular>
-          <emissive>0 1 0 0.2</emissive>
+          <ambient>0 1 0 0.10</ambient>
+          <diffuse>0 1 0 0.20</diffuse>
+          <specular>0 1 0 0.20</specular>
+          <emissive>0 1 0 0.1</emissive>
         </material>
       </visual>
       <self_collide>0</self_collide>

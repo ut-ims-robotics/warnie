@@ -21,7 +21,7 @@
     <include>
       <name>repelling_cue_0</name>
       <uri>model://vis_cue_repel</uri>
-      <pose>0 1.65 0.25 0 0 0</pose>
+      <pose>0 1.5 0.25 0 0 0</pose>
     </include>
     <include>
       <name>normal_cue_3</name>

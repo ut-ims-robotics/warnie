@@ -21,7 +21,7 @@
     <include>
       <name>attracting_cue_0</name>
       <uri>model://vis_cue_attract</uri>
-      <pose>0 0.55 0.25 0 0 0</pose>
+      <pose>0 0.4 0.25 0 0 0</pose>
     </include>
     <include>
       <name>normal_cue_0</name>

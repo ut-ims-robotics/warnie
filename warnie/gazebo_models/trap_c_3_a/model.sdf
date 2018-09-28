@@ -1,0 +1,58 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="trap_c_3_a">
+    <static>true</static>
+    
+    <include>
+      <name>attracting_cue_0</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>0 -0.85 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>attracting_cue_1</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>0 0.85 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>attracting_cue_2</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>1 -0.85 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>attracting_cue_3</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>1 0.85 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>attracting_cue_4</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>2 -0.85 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>attracting_cue_5</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>2 0.85 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>attracting_cue_6</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>3 -0.85 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>attracting_cue_7</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>3 0.85 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>attracting_cue_8</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>4 -0.85 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>attracting_cue_9</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>4 0.85 0.25 0 0 0</pose>
+    </include>
+     
+  </model>
+</sdf>

@@ -8,7 +8,11 @@
 #include <chrono>
 #include <sstream>
 #include <iomanip>
+#include <fstream>
 #include <boost/filesystem.hpp>
+#include <boost/algorithm/string/classification.hpp> // Include boost::for is_any_of
+#include <boost/algorithm/string/split.hpp> // Include for boost::split
+
 
 typedef std::vector<std::pair<std::string, float>> pairvec;
 
@@ -29,8 +33,14 @@ const pairvec continuous_trap_data = {
   {"trap_c_4_r_3_m", 0},
   {"trap_c_4_r_4", 0},
   {"trap_c_4_r_4_m", 0},
-  {"trap_c_4_n", 0},
-  {"trap_c_4_n_m", 0},
+  {"trap_c_4_n_1", 0},
+  {"trap_c_4_n_1_m", 0},
+  {"trap_c_4_n_2", 0},
+  {"trap_c_4_n_2_m", 0},
+  {"trap_c_4_n_3", 0},
+  {"trap_c_4_n_3_m", 0},
+  {"trap_c_3_r", 0},
+  {"trap_c_3_a", 0},
   {"vis_cue_normal", 0.25},
   {"vis_cue_attract", 0.25},
   {"vis_cue_repel", 0.25}
@@ -40,6 +50,7 @@ uint8_t nr_of_cont_tracks = 5;
 const float track_start_dist = 10;
 const float gate_trap_dist = 3;
 const float gate_gate_dist = 10;
+std::string trap_list_file = "";
 
 /*
  * MAIN
@@ -51,9 +62,10 @@ int main(int argc, char **argv)
     /*
      * Get the commandline arguments
      */
-    if (argc == 2)
+    if (argc == 3)
     {
       nr_of_cont_tracks = std::stoi(argv[1]);
+      trap_list_file = argv[2];
     }
 
     /*
@@ -61,6 +73,23 @@ int main(int argc, char **argv)
      */
     std::string base_path = ros::package::getPath(ROS_PACKAGE_NAME);
     std::string models_folder = "/gazebo_models/";
+
+    /*
+     * Read the track file
+     */
+    std::string line;
+    std::ifstream myfile (base_path + trap_list_file);
+    if (myfile.is_open())
+    {
+      while ( getline (myfile, line) )
+      {
+        std::vector<std::string> parameters;
+        boost::split(parameters, line, boost::is_any_of(" "), boost::token_compress_on);
+
+        std::cout << parameters.at(0) << " | " << parameters.at(1) << '\n';
+      }
+      myfile.close();
+    }
 
     /*
      * Import the templates
@@ -75,7 +104,7 @@ int main(int argc, char **argv)
     unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
     std::default_random_engine rng(seed);
 
-    std::cout << "Generating a continuous track ... " << std::flush;
+    std::cout << "Generating " << (int)nr_of_cont_tracks << " continuous tracks ... " << std::flush;
 
     for (uint8_t i=0; i<nr_of_cont_tracks; i++)
     {

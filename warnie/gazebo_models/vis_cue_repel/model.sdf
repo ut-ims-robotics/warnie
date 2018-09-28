@@ -52,8 +52,8 @@
         <pose>0 0 0 1.5708 0 1.5708</pose>
         <geometry>
           <mesh>
-            <uri>model://vis_cue_repel/meshes/repelling_cue_8_spike_2.stl</uri>
-            <scale>0.42 0.42 0.42</scale>
+            <uri>model://vis_cue_repel/meshes/repelling_cue.stl</uri>
+            <scale>0.36 0.36 0.36</scale>
           </mesh>
         </geometry>
         <material>
@@ -67,8 +67,8 @@
         <pose>0 0 0 1.5708 0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://vis_cue_repel/meshes/repelling_cue_8_spike_2.stl</uri>
-            <scale>0.42 0.42 0.42</scale>
+            <uri>model://vis_cue_repel/meshes/repelling_cue.stl</uri>
+            <scale>0.36 0.36 0.36</scale>
           </mesh>
         </geometry>
         <material>
@@ -82,8 +82,8 @@
         <pose>0 0 0 0 0 0</pose>
         <geometry>
           <mesh>
-            <uri>model://vis_cue_repel/meshes/repelling_cue_8_spike_2.stl</uri>
-            <scale>0.42 0.42 0.42</scale>
+            <uri>model://vis_cue_repel/meshes/repelling_cue.stl</uri>
+            <scale>0.36 0.36 0.36</scale>
           </mesh>
         </geometry>
         <material>
