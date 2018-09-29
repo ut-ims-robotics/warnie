@@ -1,0 +1,10 @@
+trap_c_4_a_1, 0
+trap_c_4_r_1_m, 0
+trap_c_4_n_2, 0
+trap_c_4_a_2_m, 0
+trap_c_4_r_3, 0
+trap_c_4_n_3_m, 0
+trap_c_4_a_4, 0
+trap_c_4_r_4_m, 0
+trap_c_3_n, 0
+vis_cue_attract, 0.25

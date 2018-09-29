@@ -1,0 +1,27 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="trap_d_2_3_m">
+    <static>true</static>
+    <include>
+      <name>attract_cue_0</name>
+      <uri>model://vis_cue_attract</uri>
+      <pose>0 2.2 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>normal_cue_0</name>
+      <uri>model://vis_cue_normal</uri>
+      <pose>0 0 0.25 0 0 0</pose>
+    </include>
+    <include>
+      <name>repel_cue_0</name>
+      <uri>model://vis_cue_repel</uri>
+      <pose>0 -2.2 0.25 0 0 0</pose>
+    </include>
+    
+    <include>
+      <name>gate_r</name>
+      <uri>model://study_track_gate_r</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+  </model>
+</sdf>

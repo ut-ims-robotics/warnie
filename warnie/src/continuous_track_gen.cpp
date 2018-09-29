@@ -22,7 +22,8 @@ const float track_start_dist = 10;
 const float gate_trap_dist = 3;
 const float gate_gate_dist = 10;
 std::string trap_list_file = "";
-
+std::string track_name_prefix = "track";
+std::string gates_enabled = "false";
 
 /*
  * MAIN
@@ -34,10 +35,18 @@ int main(int argc, char **argv)
     /*
      * Get the commandline arguments
      */
-    if (argc == 3)
+    if (argc == 4)
     {
       nr_of_cont_tracks = std::stoi(argv[1]);
       trap_list_file = argv[2];
+      track_name_prefix = argv[3];
+      gates_enabled = argv[4];
+    }
+    else
+    {
+      std::cout << "Invalid number of input arguments. "
+                << "Usage: <nr_of_gen_tracks> <trap_list_path> <track_name> <gates_enabled>\n";
+      return 1;
     }
 
     /*
@@ -82,7 +91,7 @@ int main(int argc, char **argv)
     for (uint8_t i=0; i<nr_of_cont_tracks; i++)
     {
       std::string traps;
-      std::string track_name = "continuous_track_" + std::to_string(i);
+      std::string track_name = track_name_prefix + "_" + std::to_string(i);
       pairvec c_trap_data_cpy = continuous_trap_data;
       std::shuffle(std::begin(c_trap_data_cpy), std::end(c_trap_data_cpy), rng);
 
@@ -94,10 +103,13 @@ int main(int argc, char **argv)
         std::stringstream gate_x_stream;
         gate_x_stream << std::fixed << std::setprecision(1) << gate_x;
 
-        t_import_model.setArgument("model_name", "study_track_gate_block");
-        t_import_model.setArgument("x", gate_x_stream.str());
-        t_import_model.setArgument("z", "0");
-        traps += t_import_model.processTemplate();
+        if (gates_enabled == "true")
+        {
+          t_import_model.setArgument("model_name", "study_track_gate_block");
+          t_import_model.setArgument("x", gate_x_stream.str());
+          t_import_model.setArgument("z", "0");
+          traps += t_import_model.processTemplate();
+        }
 
         // Add trap model
         float trap_x = gate_x + gate_trap_dist;

@@ -1,0 +1,9 @@
+trap_d_1_3, 0
+trap_d_1_3_m, 0
+trap_d_1_3_n, 0
+trap_d_2_1, 0
+trap_d_2_1_m, 0
+trap_d_2_1_n, 0
+trap_d_3_2, 0
+trap_d_3_2_m, 0
+trap_d_3_2_n, 0
