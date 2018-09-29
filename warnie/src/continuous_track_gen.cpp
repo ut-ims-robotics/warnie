@@ -16,41 +16,13 @@
 
 typedef std::vector<std::pair<std::string, float>> pairvec;
 
-const pairvec continuous_trap_data = {
-  {"trap_c_4_a_1", 0},
-  {"trap_c_4_a_1_m", 0},
-  {"trap_c_4_a_2", 0},
-  {"trap_c_4_a_2_m", 0},
-  {"trap_c_4_a_3", 0},
-  {"trap_c_4_a_3_m", 0},
-  {"trap_c_4_a_4", 0},
-  {"trap_c_4_a_4_m", 0},
-  {"trap_c_4_r_1", 0},
-  {"trap_c_4_r_1_m", 0},
-  {"trap_c_4_r_2", 0},
-  {"trap_c_4_r_2_m", 0},
-  {"trap_c_4_r_3", 0},
-  {"trap_c_4_r_3_m", 0},
-  {"trap_c_4_r_4", 0},
-  {"trap_c_4_r_4_m", 0},
-  {"trap_c_4_n_1", 0},
-  {"trap_c_4_n_1_m", 0},
-  {"trap_c_4_n_2", 0},
-  {"trap_c_4_n_2_m", 0},
-  {"trap_c_4_n_3", 0},
-  {"trap_c_4_n_3_m", 0},
-  {"trap_c_3_r", 0},
-  {"trap_c_3_a", 0},
-  {"vis_cue_normal", 0.25},
-  {"vis_cue_attract", 0.25},
-  {"vis_cue_repel", 0.25}
-};
-
+pairvec continuous_trap_data;
 uint8_t nr_of_cont_tracks = 5;
 const float track_start_dist = 10;
 const float gate_trap_dist = 3;
 const float gate_gate_dist = 10;
 std::string trap_list_file = "";
+
 
 /*
  * MAIN
@@ -84,12 +56,13 @@ int main(int argc, char **argv)
       while ( getline (myfile, line) )
       {
         std::vector<std::string> parameters;
-        boost::split(parameters, line, boost::is_any_of(" "), boost::token_compress_on);
-
-        std::cout << parameters.at(0) << " | " << parameters.at(1) << '\n';
+        boost::split(parameters, line, boost::is_any_of(", "), boost::token_compress_on);
+        continuous_trap_data.push_back( {parameters.at(0), std::atof(parameters.at(1).c_str())} );
       }
       myfile.close();
     }
+
+    std::cout << "Imported " << continuous_trap_data.size() << " traps\n";
 
     /*
      * Import the templates
