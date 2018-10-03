@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="track_biased_p2_1">
+    <static>true</static>
+    
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>10.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_d_1_1_n</name>
+      <uri>model://trap_d_1_1_n</uri>
+      <static>false</static>
+      <pose>16.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>22.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_d_3_1_m</name>
+      <uri>model://trap_d_3_1_m</uri>
+      <static>false</static>
+      <pose>28.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>34.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_b_1_1</name>
+      <uri>model://trap_b_1_1</uri>
+      <static>false</static>
+      <pose>40.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>50.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_d_1_3</name>
+      <uri>model://trap_d_1_3</uri>
+      <static>false</static>
+      <pose>56.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>62.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_d_2_3_m</name>
+      <uri>model://trap_d_2_3_m</uri>
+      <static>false</static>
+      <pose>68.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>74.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_b_1</name>
+      <uri>model://trap_b_1</uri>
+      <static>false</static>
+      <pose>80.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>94.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_d_2_3_n</name>
+      <uri>model://trap_d_2_3_n</uri>
+      <static>false</static>
+      <pose>100.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>106.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_d_3_1</name>
+      <uri>model://trap_d_3_1</uri>
+      <static>false</static>
+      <pose>112.0 0 0.000000 0 0 0</pose>
+    </include>
+
+    
+  </model>
+</sdf>

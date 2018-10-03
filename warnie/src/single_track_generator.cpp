@@ -65,7 +65,7 @@ int main(int argc, char **argv)
      * Get the base path
      */
     std::string base_path = ros::package::getPath(ROS_PACKAGE_NAME);
-    std::string models_folder = "/test_models/";
+    std::string models_folder = "/gazebo_models/";
 
     /*
      * Read the track file

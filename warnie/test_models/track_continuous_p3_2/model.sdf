@@ -34,8 +34,8 @@
       <pose>30.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_n_2_m</name>
-      <uri>model://trap_c_4_n_2_m</uri>
+      <name>trap_c_4_r_2</name>
+      <uri>model://trap_c_4_r_2</uri>
       <static>false</static>
       <pose>33.0 0 0.000000 0 0 0</pose>
     </include>
@@ -58,8 +58,8 @@
       <pose>50.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_a_3</name>
-      <uri>model://trap_c_4_a_3</uri>
+      <name>trap_c_4_n_2_m</name>
+      <uri>model://trap_c_4_n_2_m</uri>
       <static>false</static>
       <pose>53.0 0 0.000000 0 0 0</pose>
     </include>
@@ -70,8 +70,8 @@
       <pose>60.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_r_2</name>
-      <uri>model://trap_c_4_r_2</uri>
+      <name>trap_c_4_r_3_m</name>
+      <uri>model://trap_c_4_r_3_m</uri>
       <static>false</static>
       <pose>63.0 0 0.000000 0 0 0</pose>
     </include>
@@ -82,8 +82,8 @@
       <pose>70.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_a_1_m</name>
-      <uri>model://trap_c_4_a_1_m</uri>
+      <name>trap_c_4_a_3</name>
+      <uri>model://trap_c_4_a_3</uri>
       <static>false</static>
       <pose>73.0 0 0.000000 0 0 0</pose>
     </include>
@@ -94,8 +94,8 @@
       <pose>80.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_n_4</name>
-      <uri>model://trap_c_4_n_4</uri>
+      <name>trap_c_4_a_1_m</name>
+      <uri>model://trap_c_4_a_1_m</uri>
       <static>false</static>
       <pose>83.0 0 0.000000 0 0 0</pose>
     </include>
@@ -118,8 +118,8 @@
       <pose>100.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_r_3_m</name>
-      <uri>model://trap_c_4_r_3_m</uri>
+      <name>trap_c_4_n_4</name>
+      <uri>model://trap_c_4_n_4</uri>
       <static>false</static>
       <pose>103.0 0 0.000000 0 0 0</pose>
     </include>

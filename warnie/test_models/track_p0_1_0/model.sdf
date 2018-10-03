@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="track_p0_1_0">
+    <static>true</static>
+    
+    <include>
+      <name>track_continuous_p1_1</name>
+      <uri>model://track_continuous_p1_1</uri>
+      <static>false</static>
+      <pose>35.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>track_discrete_p2_1</name>
+      <uri>model://track_discrete_p2_1</uri>
+      <static>false</static>
+      <pose>110.0 0 0.000000 0 0 0</pose>
+    </include>
+
+    
+  </model>
+</sdf>
