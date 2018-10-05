@@ -10,94 +10,94 @@
       <pose>10.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_d_2_3</name>
-      <uri>model://trap_d_2_3</uri>
+      <name>trap_d_3_3_n</name>
+      <uri>model://trap_d_3_3_n</uri>
       <static>false</static>
-      <pose>16.0 0 0.000000 0 0 0</pose>
+      <pose>23.0 0 0.000000 0 0 0</pose>
     </include>
     <include>
       <name>study_track_gate_block</name>
       <uri>model://study_track_gate_block</uri>
       <static>false</static>
-      <pose>22.0 0 0 0 0 0</pose>
+      <pose>30.0 0 0 0 0 0</pose>
     </include>
     <include>
       <name>trap_d_3_3_m</name>
       <uri>model://trap_d_3_3_m</uri>
       <static>false</static>
-      <pose>28.0 0 0.000000 0 0 0</pose>
+      <pose>43.0 0 0.000000 0 0 0</pose>
     </include>
     <include>
       <name>study_track_gate_block</name>
       <uri>model://study_track_gate_block</uri>
       <static>false</static>
-      <pose>34.0 0 0 0 0 0</pose>
-    </include>
-    <include>
-      <name>trap_d_1_1_m</name>
-      <uri>model://trap_d_1_1_m</uri>
-      <static>false</static>
-      <pose>40.0 0 0.000000 0 0 0</pose>
-    </include>
-    <include>
-      <name>study_track_gate_block</name>
-      <uri>model://study_track_gate_block</uri>
-      <static>false</static>
-      <pose>46.0 0 0 0 0 0</pose>
-    </include>
-    <include>
-      <name>trap_d_2_1_n</name>
-      <uri>model://trap_d_2_1_n</uri>
-      <static>false</static>
-      <pose>52.0 0 0.000000 0 0 0</pose>
-    </include>
-    <include>
-      <name>study_track_gate_block</name>
-      <uri>model://study_track_gate_block</uri>
-      <static>false</static>
-      <pose>58.0 0 0 0 0 0</pose>
+      <pose>50.0 0 0 0 0 0</pose>
     </include>
     <include>
       <name>trap_b_1_1</name>
       <uri>model://trap_b_1_1</uri>
       <static>false</static>
-      <pose>64.0 0 0.000000 0 0 0</pose>
+      <pose>63.0 0 0.000000 0 0 0</pose>
     </include>
     <include>
       <name>study_track_gate_block</name>
       <uri>model://study_track_gate_block</uri>
       <static>false</static>
-      <pose>74.0 0 0 0 0 0</pose>
+      <pose>77.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_d_2_3</name>
+      <uri>model://trap_d_2_3</uri>
+      <static>false</static>
+      <pose>90.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>97.0 0 0 0 0 0</pose>
     </include>
     <include>
       <name>trap_d_1_1</name>
       <uri>model://trap_d_1_1</uri>
       <static>false</static>
-      <pose>80.0 0 0.000000 0 0 0</pose>
+      <pose>110.0 0 0.000000 0 0 0</pose>
     </include>
     <include>
       <name>study_track_gate_block</name>
       <uri>model://study_track_gate_block</uri>
       <static>false</static>
-      <pose>86.0 0 0 0 0 0</pose>
-    </include>
-    <include>
-      <name>trap_d_3_3_n</name>
-      <uri>model://trap_d_3_3_n</uri>
-      <static>false</static>
-      <pose>92.0 0 0.000000 0 0 0</pose>
-    </include>
-    <include>
-      <name>study_track_gate_block</name>
-      <uri>model://study_track_gate_block</uri>
-      <static>false</static>
-      <pose>98.0 0 0 0 0 0</pose>
+      <pose>117.0 0 0 0 0 0</pose>
     </include>
     <include>
       <name>trap_b_1</name>
       <uri>model://trap_b_1</uri>
       <static>false</static>
-      <pose>104.0 0 0.000000 0 0 0</pose>
+      <pose>130.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>141.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_d_2_1_n</name>
+      <uri>model://trap_d_2_1_n</uri>
+      <static>false</static>
+      <pose>154.0 0 0.000000 0 0 0</pose>
+    </include>
+    <include>
+      <name>study_track_gate_block</name>
+      <uri>model://study_track_gate_block</uri>
+      <static>false</static>
+      <pose>161.0 0 0 0 0 0</pose>
+    </include>
+    <include>
+      <name>trap_d_1_1_m</name>
+      <uri>model://trap_d_1_1_m</uri>
+      <static>false</static>
+      <pose>174.0 0 0.000000 0 0 0</pose>
     </include>
 
     

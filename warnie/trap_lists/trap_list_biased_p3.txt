@@ -4,5 +4,5 @@ trap_d_2_1, 0
 trap_d_2_1_m, 0
 trap_d_3_1_n, 0
 trap_d_3_3, 0
-trap_b_1, 0, 20
-trap_b_1_1, 0, 16
+trap_b_1, 0, 24
+trap_b_1_1, 0, 27

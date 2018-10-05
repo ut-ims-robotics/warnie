@@ -13,13 +13,13 @@
       <name>track_discrete_p1_0</name>
       <uri>model://track_discrete_p1_0</uri>
       <static>false</static>
-      <pose>165.0 0 0.000000 0 0 0</pose>
+      <pose>164.0 0 0.000000 0 0 0</pose>
     </include>
     <include>
       <name>track_biased_p3_0</name>
       <uri>model://track_biased_p3_0</uri>
       <static>false</static>
-      <pose>280.0 0 0.000000 0 0 0</pose>
+      <pose>299.0 0 0.000000 0 0 0</pose>
     </include>
 
     

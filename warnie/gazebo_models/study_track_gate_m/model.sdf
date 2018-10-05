@@ -4,7 +4,7 @@
     <static>true</static>
     
     <link name='wall_l'>
-      <pose>-6 -4.95 1.25 0 0 0</pose>
+      <pose>-8 -4.95 1.25 0 0 0</pose>
       <collision name='collision'>
         <geometry>
           <box>
@@ -28,7 +28,7 @@
     </link>
 
     <link name='wall_r'>
-      <pose>-6 4.95 1.25 0 0 0</pose>
+      <pose>-8 4.95 1.25 0 0 0</pose>
       <collision name='collision'>
         <geometry>
           <box>

@@ -20,15 +20,15 @@ NR_OF_TRACKS=3
 NR_OF_PARTITIONS=3
 
 # Generate 9 continuous tracks
-rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_continuous_p1.txt track_continuous_p1 true $NR_OF_TRACKS 10
-rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_continuous_p2.txt track_continuous_p2 true $NR_OF_TRACKS 10
-rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_continuous_p3.txt track_continuous_p3 true $NR_OF_TRACKS 10
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_continuous_p1.txt track_continuous_p1 true 5 11
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_continuous_p2.txt track_continuous_p2 true 5 11
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_continuous_p3.txt track_continuous_p3 true 5 11
 
 # Check if the process was successful or not
 check_success "Failed to generate continuous tracks"
 
 # Generate 3 discrete tracks
-rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete.txt track_discrete_p1 false 0 13
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete.txt track_discrete_p1 false 0 15
 #rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete_p2.txt track_discrete_p2 false 0 10
 #rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete_p3.txt track_discrete_p3 false 0 10
 
@@ -36,9 +36,9 @@ rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_lis
 check_success "Failed to generate discrete tracks"
 
 # Generate 9 biased tracks
-rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_biased_p1.txt track_biased_p1 true 6 12
-rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_biased_p2.txt track_biased_p2 true 6 12
-rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_biased_p3.txt track_biased_p3 true 6 12
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_biased_p1.txt track_biased_p1 true 13 20
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_biased_p2.txt track_biased_p2 true 13 20
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_biased_p3.txt track_biased_p3 true 13 20
 
 # Check if the process was successful or not
 check_success "Failed to generate biased tracks"
@@ -55,8 +55,8 @@ for (( p=0; p < $NR_OF_PARTITIONS; p++ )); do
 
     TRACK_LIST_NAME=$TRACK_LIST_DIR/"track_list_p${p}_${i}_tmp.txt"
 
-    echo "track_continuous_p${p_i1}_${i}, 0, 105" >> $TRACK_LIST_NAME
-    echo "track_discrete_p1_${i}, 0, 90" >> $TRACK_LIST_NAME
+    echo "track_continuous_p${p_i1}_${i}, 0, 104" >> $TRACK_LIST_NAME
+    echo "track_discrete_p1_${i}, 0, 110" >> $TRACK_LIST_NAME
     echo "track_biased_p${p_i3}_${i}, 0, 80" >> $TRACK_LIST_NAME
     #echo "track_discrete_p${p_i2}_${i}, 0, 90" >> $TRACK_LIST_NAME
 
