@@ -20,3 +20,7 @@ include_directories(
 add_executable(single_track_generator src/single_track_generator.cpp)
 add_dependencies(single_track_generator ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
 target_link_libraries(single_track_generator ${catkin_LIBRARIES} ft_parser)
+
+add_executable(gazebo_model_generator src/gazebo_model_generator.cpp)
+add_dependencies(gazebo_model_generator ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
+target_link_libraries(gazebo_model_generator ${catkin_LIBRARIES} ft_parser)

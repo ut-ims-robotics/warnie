@@ -62,6 +62,7 @@ for (( p=0; p < $NR_OF_PARTITIONS; p++ )); do
 
     # Generate the track model
     rosrun warnie single_track_generator 1 false /$TRACK_LIST_NAME track_p${p}_${i} false 25 0
+    rosrun warnie gazebo_model_generator "name" /$TRACK_LIST_NAME
   done
 done
 
