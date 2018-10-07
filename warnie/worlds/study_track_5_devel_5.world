@@ -1241,8 +1241,8 @@
     </gui>
     <model name='track_p2_0_0'>
       <static>1</static>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>45 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -1283,8 +1283,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_2::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -1334,7 +1334,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>50 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_2::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -1384,7 +1384,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>50 -1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_2::repelling_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -1479,7 +1479,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>50 -0.95 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_2::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -1529,7 +1529,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>50 1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_2::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -1579,7 +1579,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>50 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>56 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -1620,8 +1620,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -1716,7 +1716,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>61 -0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_1::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -1811,7 +1811,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>61 0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_2::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -1906,7 +1906,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>62 -0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_3::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -2001,7 +2001,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>62 0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_4::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -2096,7 +2096,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>63 -0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_5::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -2191,7 +2191,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>63 0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_6::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -2286,7 +2286,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>64 -0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_7::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -2381,7 +2381,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>64 0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_8::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -2476,7 +2476,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>65 -0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_3_r::repelling_cue_9::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -2571,7 +2571,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>65 0.85 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>67 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -2612,8 +2612,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_3_m::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -2663,7 +2663,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>72 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_3_m::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -2713,7 +2713,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>72 1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_3_m::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -2763,7 +2763,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>72 1.1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_3_m::repelling_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -2858,7 +2858,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>72 0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_r_3_m::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -2908,7 +2908,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>72 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>78 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -2949,8 +2949,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_1_m::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3000,7 +3000,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>83 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_1_m::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3050,7 +3050,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>83 1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_1_m::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3100,7 +3100,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>83 1.1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_1_m::attracting_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -3164,7 +3164,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>83 -1.5 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_1_m::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3214,7 +3214,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>83 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>89 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -3255,8 +3255,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_1::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3306,7 +3306,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>94 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_1::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3356,7 +3356,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>94 -1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_1::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3406,7 +3406,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>94 -0.95 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_1::normal_cue_4::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3456,7 +3456,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>94 1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_1::normal_cue_5::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3506,7 +3506,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>94 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>100 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -3547,8 +3547,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_3::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3598,7 +3598,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>105 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_3::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3648,7 +3648,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>105 -1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_3::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3698,7 +3698,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>105 -1.1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_3::attracting_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -3762,7 +3762,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>105 -0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_3::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3812,7 +3812,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>105 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>111 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -3853,7 +3853,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::vis_cue_normal::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3903,7 +3903,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>116 0 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>122 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -3944,8 +3944,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_2_m::normal_cue_4::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -3995,7 +3995,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>127 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_2_m::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4045,7 +4045,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>127 1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_2_m::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4095,7 +4095,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>127 1.1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_2_m::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4145,7 +4145,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>127 -1.5 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_2_m::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4195,7 +4195,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>127 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>133 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -4236,8 +4236,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_4::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4287,7 +4287,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>138 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_4::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4337,7 +4337,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>138 -1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_4::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4387,7 +4387,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>138 -1.1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_4::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4437,7 +4437,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>138 -0.55 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_n_4::normal_cue_4::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4487,7 +4487,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>138 2.05 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::study_track_gate_block::gate'>
         <pose frame=''>144 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -4528,8 +4528,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_4_m::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4579,7 +4579,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>149 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_4_m::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4629,7 +4629,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>149 1.65 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_4_m::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4679,7 +4679,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>149 1.1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_4_m::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -4729,7 +4729,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>149 0.55 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_continuous_p3_0::trap_c_4_a_4_m::attracting_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -4793,9 +4793,9 @@
         <kinematic>0</kinematic>
         <pose frame=''>149 -2.05 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -4859,7 +4859,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>174 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2::attract_cue_1::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -4923,7 +4923,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>174 -0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2::repel_cue_2::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -5018,7 +5018,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>174 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2::repel_cue_3::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -5190,8 +5190,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2_n::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -5241,7 +5241,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>189 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2_n::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -5291,7 +5291,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>189 0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2_n::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -5341,7 +5341,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>189 -0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2_n::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -5468,8 +5468,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_2_2_n::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -5519,7 +5519,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>204 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_2_2_n::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -5569,7 +5569,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>204 0 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_2_2_n::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -5696,8 +5696,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_3_2_n::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -5747,7 +5747,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>219 -1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_3_2_n::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -5874,8 +5874,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_3_2::repel_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -5970,7 +5970,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>234 1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_3_2::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -6111,8 +6111,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_3_2_m::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -6176,7 +6176,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>249 1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_3_2_m::repel_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -6348,8 +6348,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_2_2::repel_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -6444,7 +6444,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>264 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_2_2::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -6494,7 +6494,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>264 0 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_2_2::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -6635,8 +6635,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_2_2_m::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -6700,7 +6700,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>279 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_2_2_m::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -6750,7 +6750,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>279 0 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_2_2_m::repel_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -6922,8 +6922,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2_m::repel_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -7018,7 +7018,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>294 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2_m::repel_cue_1::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -7113,7 +7113,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>294 -0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2_m::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -7177,7 +7177,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>294 0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_discrete_p1_0::trap_d_1_2_m::attract_cue_1::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -7318,8 +7318,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_biased_p2_0::study_track_gate_block::gate'>
         <pose frame=''>309 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -7360,8 +7360,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_1_1_n::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -7411,7 +7411,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>322 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_1_1_n::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -7461,7 +7461,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>322 0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_1_1_n::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -7511,7 +7511,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>322 -0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_1_1_n::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -7638,7 +7638,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::study_track_gate_block::gate'>
         <pose frame=''>329 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -7679,8 +7679,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_3_1_m::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -7744,7 +7744,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>342 1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_3_1_m::repel_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -7916,7 +7916,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::study_track_gate_block::gate'>
         <pose frame=''>349 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -7957,8 +7957,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_3_1::repel_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -8053,7 +8053,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>362 1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_3_1::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -8194,7 +8194,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::study_track_gate_block::gate'>
         <pose frame=''>369 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -8235,8 +8235,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_2_3_n::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -8286,7 +8286,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>382 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_2_3_n::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -8336,7 +8336,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>382 0 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_2_3_n::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -8463,7 +8463,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::study_track_gate_block::gate'>
         <pose frame=''>389 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -8504,8 +8504,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1_1::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -8569,7 +8569,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>402 -1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1_1::attract_cue_1::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -8633,7 +8633,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>402 -0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1_1::repel_cue_2::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -8728,7 +8728,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>402 1 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1_1::repel_cue_3::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -8977,7 +8977,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::study_track_gate_block::gate'>
         <pose frame=''>416 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -9018,8 +9018,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_2_3_m::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -9083,7 +9083,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>429 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_2_3_m::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -9133,7 +9133,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>429 0 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_2_3_m::repel_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -9305,7 +9305,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::study_track_gate_block::gate'>
         <pose frame=''>436 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -9346,7 +9346,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
+      <static>1</static>
       <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::gate_m_start::wall_l'>
         <pose frame=''>440 -4.95 1.25 0 -0 0</pose>
@@ -9424,7 +9424,7 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::normal_cue_0::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -9474,7 +9474,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>449 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::normal_cue_1::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -9524,7 +9524,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>449 -1.33 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::normal_cue_2::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -9574,7 +9574,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>449 0.47 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::normal_cue_3::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -9624,7 +9624,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>449 1.33 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::normal_cue_4::vis_cue_normal'>
         <inertial>
           <mass>1</mass>
@@ -9674,7 +9674,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>449 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::repelling_cue_0::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -9769,7 +9769,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>453 0.08 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::repelling_cue_1::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -9864,7 +9864,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>453 -0.94 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::repelling_cue_2::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -9959,7 +9959,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>452 -0.43 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_b_1::attracting_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -10023,7 +10023,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>453 0.9 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::study_track_gate_block::gate'>
         <pose frame=''>460 0 0 0 0 -3.14159</pose>
         <collision name='collision'>
@@ -10064,8 +10064,8 @@
         <self_collide>0</self_collide>
         <kinematic>0</kinematic>
       </link>
-      <static>0</static>
-      <static>0</static>
+      <static>1</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_1_3::attract_cue_0::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -10129,7 +10129,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>473 -2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_1_3::attract_cue_1::vis_cue_attract'>
         <inertial>
           <mass>1</mass>
@@ -10193,7 +10193,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>473 -0.4 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_1_3::repel_cue_2::vis_cue_repel'>
         <inertial>
           <mass>1</mass>
@@ -10288,7 +10288,7 @@
         <kinematic>0</kinematic>
         <pose frame=''>473 2.2 0.25 0 -0 0</pose>
       </link>
-      <static>0</static>
+      <static>1</static>
       <link name='track_biased_p2_0::trap_d_1_3::repel_cue_3::vis_cue_repel'>
         <inertial>
           <mass>1</mass>

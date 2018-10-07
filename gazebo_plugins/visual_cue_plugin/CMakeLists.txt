@@ -26,12 +26,14 @@ include_directories(
 link_directories(${GAZEBO_LIBRARY_DIRS})
 include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE_DIRS})
 
-add_library(${PROJECT_NAME} src/visual_cue_plugin.cpp
-                            src/line_helper.cpp
-                            src/spike_helper.cpp
-                            src/spiked_visual_cue.cpp)
-target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+#add_library(${PROJECT_NAME} src/visual_cue_plugin.cpp
+#                            src/line_helper.cpp
+#                            src/spike_helper.cpp
+#                            src/spiked_visual_cue.cpp)
+#target_link_libraries(${PROJECT_NAME} ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
-add_library(${PROJECT_NAME}_vis src/model_cue_plugin_vis.cpp)
-target_link_libraries(${PROJECT_NAME}_vis ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+#add_library(${PROJECT_NAME}_vis src/model_cue_plugin_vis.cpp)
+#target_link_libraries(${PROJECT_NAME}_vis ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
+add_library(${PROJECT_NAME}_model src/model_logger_plugin.cpp)
+target_link_libraries(${PROJECT_NAME}_model ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
