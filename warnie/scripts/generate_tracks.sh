@@ -54,15 +54,19 @@ for (( p=0; p < $NR_OF_PARTITIONS; p++ )); do
     p_i3=$(((($p+2) % 3) +1))
 
     TRACK_LIST_NAME=$TRACK_LIST_DIR/"track_list_p${p}_${i}_tmp.txt"
+    TRACK_MODEL_LIST_NAME=$TRACK_LIST_DIR/"track_model_list_p${p}_${i}_tmp.txt"
 
     echo "track_continuous_p${p_i1}_${i}, 0, 104" >> $TRACK_LIST_NAME
     echo "track_discrete_p1_${i}, 0, 110" >> $TRACK_LIST_NAME
     echo "track_biased_p${p_i3}_${i}, 0, 80" >> $TRACK_LIST_NAME
     #echo "track_discrete_p${p_i2}_${i}, 0, 90" >> $TRACK_LIST_NAME
 
+    echo "track_p${p}_${i}_0, 3" >> $TRACK_MODEL_LIST_NAME
+    echo "study_track, 5" >> $TRACK_MODEL_LIST_NAME
+
     # Generate the track model
     rosrun warnie single_track_generator 1 false /$TRACK_LIST_NAME track_p${p}_${i} false 25 0
-    rosrun warnie gazebo_model_generator "name" /$TRACK_LIST_NAME
+    rosrun warnie gazebo_model_generator track_model_p${p}_${i} /$TRACK_MODEL_LIST_NAME
   done
 done
 
