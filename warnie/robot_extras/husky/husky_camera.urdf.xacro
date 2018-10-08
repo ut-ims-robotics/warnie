@@ -89,7 +89,10 @@
   </gazebo>
 
   <gazebo>
-    <plugin name="pose_logger" filename="libvisual_cue_plugin_model.so"/>
+    <plugin name="pose_logger" filename="libvisual_cue_plugin_model.so">
+      <subsamples>50</subsamples>
+      <data_path>/home/robert/robosemiotics_study/</data_path>
+    </plugin>
   </gazebo>
 
 </robot>
