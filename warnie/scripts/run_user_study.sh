@@ -23,7 +23,7 @@ NR_OF_WORLDS=9
 echo -e $GREEN$BOLD"Starting the robosemiotics user study" $SUBJECT_NR$RESET$NL
 
 # Create robosemiotics folder
-mkdir -p $ROBOSEMIOTICS_PTH
+mkdir -p $ROBOSEMIOTICS_PTH/data
 check_success "Failed to create data storage directories"
 
 # Create the counter file
@@ -41,13 +41,13 @@ echo -e $GREEN"* Running the user study on subject nr:" $SUBJECT_NR$RESET
 # Load the simulation environment
 GAZEBO_WORLD="study_track_$(((($SUBJECT_NR-1) % NR_OF_WORLDS) + 1)).world"
 echo -e $GREEN"* Loading "$GAZEBO_WORLD$RESET
-#roslaunch warnie husky_in_world.launch joystick_enabled:=true gazebo_world:=study_track_5_devel_5.world load_rviz:=true
+roslaunch warnie husky_in_world.launch joystick_enabled:=true gazebo_world:=study_track_5_devel_5.world load_rviz:=true
 check_success "Failed to load the simulation environment"
 
-# Start logging
-#
-#
-#
+# Create subject specific data folder and move all the data into this folder
+STUDY_DATA=$ROBOSEMIOTICS_PTH/data/subject_nr_$SUBJECT_NR
+mkdir $STUDY_DATA
+mv $ROBOSEMIOTICS_PTH/husky_trajectory.csv $STUDY_DATA/
 
 # Increment the subject number
 echo -e $GREEN"* Incrementing the subject counter "$RESET
