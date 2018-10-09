@@ -37,3 +37,6 @@ include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE
 
 add_library(${PROJECT_NAME}_model src/model_logger_plugin.cpp)
 target_link_libraries(${PROJECT_NAME}_model ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
+add_library(${PROJECT_NAME}_world src/model_import_plugin.cpp)
+target_link_libraries(${PROJECT_NAME}_world ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})

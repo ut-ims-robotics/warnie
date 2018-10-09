@@ -22,8 +22,8 @@
       <pose>34.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_d_3_1</name>
-      <uri>model://trap_d_3_1</uri>
+      <name>trap_d_3_1_m</name>
+      <uri>model://trap_d_3_1_m</uri>
       <static>false</static>
       <pose>47.0 0 0.000000 0 0 0</pose>
     </include>
@@ -34,8 +34,8 @@
       <pose>54.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_d_1_3</name>
-      <uri>model://trap_d_1_3</uri>
+      <name>trap_d_2_3_m</name>
+      <uri>model://trap_d_2_3_m</uri>
       <static>false</static>
       <pose>67.0 0 0.000000 0 0 0</pose>
     </include>
@@ -58,8 +58,8 @@
       <pose>101.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_d_3_1_m</name>
-      <uri>model://trap_d_3_1_m</uri>
+      <name>trap_d_1_1_n</name>
+      <uri>model://trap_d_1_1_n</uri>
       <static>false</static>
       <pose>114.0 0 0.000000 0 0 0</pose>
     </include>
@@ -70,8 +70,8 @@
       <pose>121.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_d_1_1_n</name>
-      <uri>model://trap_d_1_1_n</uri>
+      <name>trap_d_3_1</name>
+      <uri>model://trap_d_3_1</uri>
       <static>false</static>
       <pose>134.0 0 0.000000 0 0 0</pose>
     </include>
@@ -82,8 +82,8 @@
       <pose>141.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_d_2_3_n</name>
-      <uri>model://trap_d_2_3_n</uri>
+      <name>trap_d_1_3</name>
+      <uri>model://trap_d_1_3</uri>
       <static>false</static>
       <pose>154.0 0 0.000000 0 0 0</pose>
     </include>
@@ -94,8 +94,8 @@
       <pose>161.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_d_2_3_m</name>
-      <uri>model://trap_d_2_3_m</uri>
+      <name>trap_d_2_3_n</name>
+      <uri>model://trap_d_2_3_n</uri>
       <static>false</static>
       <pose>174.0 0 0.000000 0 0 0</pose>
     </include>

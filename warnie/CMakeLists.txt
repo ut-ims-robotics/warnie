@@ -24,3 +24,7 @@ target_link_libraries(single_track_generator ${catkin_LIBRARIES} ft_parser)
 add_executable(gazebo_model_generator src/gazebo_model_generator.cpp)
 add_dependencies(gazebo_model_generator ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
 target_link_libraries(gazebo_model_generator ${catkin_LIBRARIES} ft_parser)
+
+add_executable(gazebo_world_generator src/gazebo_world_generator.cpp)
+add_dependencies(gazebo_world_generator ${catkin_EXPORTED_TARGETS} ${${PROJECT_NAME}_EXPORTED_TARGETS})
+target_link_libraries(gazebo_world_generator ${catkin_LIBRARIES} ft_parser)

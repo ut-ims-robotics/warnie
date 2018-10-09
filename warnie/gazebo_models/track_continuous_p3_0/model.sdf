@@ -10,8 +10,8 @@
       <pose>10.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_r_2</name>
-      <uri>model://trap_c_4_r_2</uri>
+      <name>trap_c_4_n_4</name>
+      <uri>model://trap_c_4_n_4</uri>
       <static>false</static>
       <pose>15.0 0 0.000000 0 0 0</pose>
     </include>
@@ -22,8 +22,8 @@
       <pose>21.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_3_r</name>
-      <uri>model://trap_c_3_r</uri>
+      <name>trap_c_4_a_1_m</name>
+      <uri>model://trap_c_4_a_1_m</uri>
       <static>false</static>
       <pose>26.0 0 0.000000 0 0 0</pose>
     </include>
@@ -34,10 +34,10 @@
       <pose>32.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_r_3_m</name>
-      <uri>model://trap_c_4_r_3_m</uri>
+      <name>vis_cue_normal</name>
+      <uri>model://vis_cue_normal</uri>
       <static>false</static>
-      <pose>37.0 0 0.000000 0 0 0</pose>
+      <pose>37.0 0 0.250000 0 0 0</pose>
     </include>
     <include>
       <name>study_track_gate_block</name>
@@ -46,8 +46,8 @@
       <pose>43.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_a_1_m</name>
-      <uri>model://trap_c_4_a_1_m</uri>
+      <name>trap_c_4_r_3_m</name>
+      <uri>model://trap_c_4_r_3_m</uri>
       <static>false</static>
       <pose>48.0 0 0.000000 0 0 0</pose>
     </include>
@@ -58,8 +58,8 @@
       <pose>54.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_n_1</name>
-      <uri>model://trap_c_4_n_1</uri>
+      <name>trap_c_4_n_2_m</name>
+      <uri>model://trap_c_4_n_2_m</uri>
       <static>false</static>
       <pose>59.0 0 0.000000 0 0 0</pose>
     </include>
@@ -82,10 +82,10 @@
       <pose>76.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>vis_cue_normal</name>
-      <uri>model://vis_cue_normal</uri>
+      <name>trap_c_4_n_1</name>
+      <uri>model://trap_c_4_n_1</uri>
       <static>false</static>
-      <pose>81.0 0 0.250000 0 0 0</pose>
+      <pose>81.0 0 0.000000 0 0 0</pose>
     </include>
     <include>
       <name>study_track_gate_block</name>
@@ -94,8 +94,8 @@
       <pose>87.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_n_2_m</name>
-      <uri>model://trap_c_4_n_2_m</uri>
+      <name>trap_c_4_a_4_m</name>
+      <uri>model://trap_c_4_a_4_m</uri>
       <static>false</static>
       <pose>92.0 0 0.000000 0 0 0</pose>
     </include>
@@ -106,8 +106,8 @@
       <pose>98.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_n_4</name>
-      <uri>model://trap_c_4_n_4</uri>
+      <name>trap_c_3_r</name>
+      <uri>model://trap_c_3_r</uri>
       <static>false</static>
       <pose>103.0 0 0.000000 0 0 0</pose>
     </include>
@@ -118,8 +118,8 @@
       <pose>109.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_a_4_m</name>
-      <uri>model://trap_c_4_a_4_m</uri>
+      <name>trap_c_4_r_2</name>
+      <uri>model://trap_c_4_r_2</uri>
       <static>false</static>
       <pose>114.0 0 0.000000 0 0 0</pose>
     </include>

@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+  <arg name="bagfile" default=""/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find warnie)/config/replay_video.rviz"/>
+  <node pkg="rosbag" type="play" name="sim_husky_cam" output="screen" args="-l -q $(arg bagfile)"/>
+
+</launch>

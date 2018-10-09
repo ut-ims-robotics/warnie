@@ -49,6 +49,15 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
-    
+
+    <include>
+      <pose>-30 0 0 0 0 0</pose>
+      <uri>model://track_model_p1_0</uri>
+    </include>
+
+    <plugin name="save_the_world" filename="libvisual_cue_plugin_world.so">
+      <data_path>/home/robert/robosemiotics_study/</data_path>
+      <world_name>test</world_name>
+    </plugin>
   </world>
 </sdf>

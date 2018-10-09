@@ -10,8 +10,8 @@
       <pose>10.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_n_3_m</name>
-      <uri>model://trap_c_4_n_3_m</uri>
+      <name>trap_c_4_a_1</name>
+      <uri>model://trap_c_4_a_1</uri>
       <static>false</static>
       <pose>15.0 0 0.000000 0 0 0</pose>
     </include>
@@ -22,8 +22,8 @@
       <pose>21.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_a_4</name>
-      <uri>model://trap_c_4_a_4</uri>
+      <name>trap_c_4_a_2_m</name>
+      <uri>model://trap_c_4_a_2_m</uri>
       <static>false</static>
       <pose>26.0 0 0.000000 0 0 0</pose>
     </include>
@@ -46,8 +46,8 @@
       <pose>43.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_r_3</name>
-      <uri>model://trap_c_4_r_3</uri>
+      <name>trap_c_3_n</name>
+      <uri>model://trap_c_3_n</uri>
       <static>false</static>
       <pose>48.0 0 0.000000 0 0 0</pose>
     </include>
@@ -58,8 +58,8 @@
       <pose>54.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_a_1</name>
-      <uri>model://trap_c_4_a_1</uri>
+      <name>trap_c_4_r_1_m</name>
+      <uri>model://trap_c_4_r_1_m</uri>
       <static>false</static>
       <pose>59.0 0 0.000000 0 0 0</pose>
     </include>
@@ -70,8 +70,8 @@
       <pose>65.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_3_n</name>
-      <uri>model://trap_c_3_n</uri>
+      <name>trap_c_4_a_4</name>
+      <uri>model://trap_c_4_a_4</uri>
       <static>false</static>
       <pose>70.0 0 0.000000 0 0 0</pose>
     </include>
@@ -82,10 +82,10 @@
       <pose>76.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_r_1_m</name>
-      <uri>model://trap_c_4_r_1_m</uri>
+      <name>vis_cue_attract</name>
+      <uri>model://vis_cue_attract</uri>
       <static>false</static>
-      <pose>81.0 0 0.000000 0 0 0</pose>
+      <pose>81.0 0 0.250000 0 0 0</pose>
     </include>
     <include>
       <name>study_track_gate_block</name>
@@ -94,8 +94,8 @@
       <pose>87.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_a_2_m</name>
-      <uri>model://trap_c_4_a_2_m</uri>
+      <name>trap_c_4_n_2</name>
+      <uri>model://trap_c_4_n_2</uri>
       <static>false</static>
       <pose>92.0 0 0.000000 0 0 0</pose>
     </include>
@@ -106,8 +106,8 @@
       <pose>98.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>trap_c_4_n_2</name>
-      <uri>model://trap_c_4_n_2</uri>
+      <name>trap_c_4_n_3_m</name>
+      <uri>model://trap_c_4_n_3_m</uri>
       <static>false</static>
       <pose>103.0 0 0.000000 0 0 0</pose>
     </include>
@@ -118,10 +118,10 @@
       <pose>109.0 0 0 0 0 0</pose>
     </include>
     <include>
-      <name>vis_cue_attract</name>
-      <uri>model://vis_cue_attract</uri>
+      <name>trap_c_4_r_3</name>
+      <uri>model://trap_c_4_r_3</uri>
       <static>false</static>
-      <pose>114.0 0 0.250000 0 0 0</pose>
+      <pose>114.0 0 0.000000 0 0 0</pose>
     </include>
 
     

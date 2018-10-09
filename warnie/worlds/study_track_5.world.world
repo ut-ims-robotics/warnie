@@ -49,6 +49,17 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+
+    <include>
+      <pose>-30 0 0 0 0 0</pose>
+      <uri>model://study_track</uri>
+    </include>
+
     
+
+    <plugin name="save_the_world" filename="libvisual_cue_plugin_world.so">
+      <data_path>/track_list_tmp/track_model_list_p1_1_tmp.txt</data_path>
+      <world_name>study_track_5.world</world_name>
+    </plugin>
   </world>
 </sdf>
