@@ -14,12 +14,12 @@
       <pose>0 -1.65 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>attracting_cue_0</name>
+      <name>op_r</name>
       <uri>model://vis_cue_attract</uri>
       <pose>0 -0.95 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>normal_cue_2</name>
+      <name>op_l</name>
       <uri>model://vis_cue_normal</uri>
       <pose>0 1.65 0.25 0 0 0</pose>
     </include>

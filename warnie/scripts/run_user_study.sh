@@ -54,12 +54,17 @@ mkdir $STUDY_DATA
 mv $ROBOSEMIOTICS_PTH/husky_trajectory.csv $STUDY_DATA/
 mv $ROBOSEMIOTICS_PTH/husky_image_raw_compressed.bag $STUDY_DATA/
 mv $ROBOSEMIOTICS_PTH/$GAZEBO_WORLD $STUDY_DATA/
-python2.7 $WARNIE_PTH/scripts/data_processing_scripts/format_objects.py $STUDY_DATA/$GAZEBO_WORLD $STUDY_DATA/track_objects.csv
+python2.7 $WARNIE_PTH/scripts/data_processing_scripts/format_objects.py $STUDY_DATA/$GAZEBO_WORLD $STUDY_DATA/track_layout.csv
 check_success "Failed to move the data"
 
 # Increment the subject number
 echo -e $GREEN"* Incrementing the subject counter "$RESET
 echo "$SUBJECT_NR" > $SUBJECT_COUNTER_PTH
 check_success "Failed to increment the subject counter"
+
+# Generate a summary of the test
+echo -e $GREEN"* Generating a summary of the test "$RESET
+python2.7 $WARNIE_PTH/scripts/data_processing_scripts/test_summary.py $STUDY_DATA/husky_trajectory.csv $STUDY_DATA/summary.txt
+check_success "Failed to generate the summary"
 
 echo -e $NL$GREEN$BOLD"Experiment finished successfully."$RESET$NL

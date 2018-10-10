@@ -174,6 +174,18 @@ int main(int argc, char **argv)
         gate_x += previous_trap_len;
       }
 
+      // Add the closing gate
+      if (gates_enabled == "true")
+      {
+        std::stringstream gate_x_stream;
+        gate_x_stream << std::fixed << std::setprecision(1) << gate_x;
+
+        t_import_model.setArgument("model_name", "study_track_gate_block");
+        t_import_model.setArgument("x", gate_x_stream.str());
+        t_import_model.setArgument("z", "0");
+        traps += t_import_model.processTemplate();
+      }
+
       // Create a gazebo model folder structure
       boost::filesystem::create_directories(base_path + models_folder + track_name);
 

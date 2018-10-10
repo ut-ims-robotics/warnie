@@ -3,22 +3,22 @@
   <model name="trap_d_1_1_m">
     <static>true</static>
     <include>
-      <name>attract_cue_1</name>
+      <name>op_ll</name>
       <uri>model://vis_cue_attract</uri>
       <pose>0 2.2 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>attract_cue_0</name>
+      <name>op_lr</name>
       <uri>model://vis_cue_attract</uri>
       <pose>0 0.4 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>repel_cue_1</name>
+      <name>op_rr</name>
       <uri>model://vis_cue_repel</uri>
       <pose>0 -2.2 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>repel_cue_0</name>
+      <name>op_rl</name>
       <uri>model://vis_cue_repel</uri>
       <pose>0 -0.4 0.25 0 0 0</pose>
     </include>

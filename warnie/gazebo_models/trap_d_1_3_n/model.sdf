@@ -3,22 +3,22 @@
   <model name="trap_d_1_3_n">
     <static>true</static>
      <include>
-      <name>normal_cue_0</name>
+      <name>op_ll</name>
       <uri>model://vis_cue_normal</uri>
       <pose>0 2.2 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>normal_cue_1</name>
+      <name>op_lr</name>
       <uri>model://vis_cue_normal</uri>
       <pose>0 0.4 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>normal_cue_2</name>
+      <name>op_rl</name>
       <uri>model://vis_cue_normal</uri>
       <pose>0 -0.4 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>normal_cue_3</name>
+      <name>op_rr</name>
       <uri>model://vis_cue_normal</uri>
       <pose>0 -2.2 0.25 0 0 0</pose>
     </include>

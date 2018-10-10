@@ -41,7 +41,7 @@
       <pose>4 0.08 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>repelling_cue_1</name>
+      <name>b_r</name>
       <uri>model://vis_cue_repel</uri>
       <pose>4 -0.94 0.25 0 0 0</pose>
     </include>
@@ -52,7 +52,7 @@
     </include>
 
     <include>
-      <name>attracting_cue_0</name>
+      <name>b_l</name>
       <uri>model://vis_cue_attract</uri>
       <pose>4 0.9 0.25 0 0 0</pose>
     </include>

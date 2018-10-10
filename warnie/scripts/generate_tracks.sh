@@ -58,7 +58,7 @@ for (( p=0; p < $NR_OF_PARTITIONS; p++ )); do
     TRACK_LIST_NAME=$TRACK_LIST_DIR/"track_list_p${p}_${i}_tmp.txt"
 
     echo "track_continuous_p${p_i1}_${i}, 5" >> $TRACK_LIST_NAME
-    echo "track_discrete_p1_${i}, 135" >> $TRACK_LIST_NAME
+    echo "track_discrete_p1_${i}, 140" >> $TRACK_LIST_NAME
     echo "track_biased_p${p_i3}_${i}, 270" >> $TRACK_LIST_NAME
     
     rosrun warnie gazebo_world_generator study_track_${idx} /$TRACK_LIST_NAME $WORLD_OUTPUT_DIR

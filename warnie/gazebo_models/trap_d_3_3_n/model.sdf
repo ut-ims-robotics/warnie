@@ -3,12 +3,12 @@
   <model name="trap_d_3_3_n">
     <static>true</static>
     <include>
-      <name>normal_cue_0</name>
+      <name>b_r</name>
       <uri>model://vis_cue_normal</uri>
       <pose>0 -1 0.25 0 0 0</pose>
     </include>
     <include>
-      <name>normal_cue_1</name>
+      <name>b_l</name>
       <uri>model://vis_cue_normal</uri>
       <pose>0 1 0.25 0 0 0</pose>
     </include>
