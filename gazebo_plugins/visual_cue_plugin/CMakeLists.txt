@@ -5,7 +5,7 @@ add_compile_options(-std=c++11)
 # Load catkin and all dependencies required for this package
 find_package(catkin REQUIRED COMPONENTS 
   roscpp 
-  gazebo_ros 
+  gazebo_ros
 )
 
 # Depend on system install of Gazebo
@@ -36,6 +36,9 @@ include_directories(${Boost_INCLUDE_DIR} ${catkin_INCLUDE_DIRS} ${GAZEBO_INCLUDE
 #target_link_libraries(${PROJECT_NAME}_vis ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
 add_library(${PROJECT_NAME}_model src/model_logger_plugin.cpp)
+target_link_libraries(${PROJECT_NAME}_model ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
+
+add_library(${PROJECT_NAME}_model_reset src/model_pose_reset_plugin.cpp)
 target_link_libraries(${PROJECT_NAME}_model ${catkin_LIBRARIES} ${GAZEBO_LIBRARIES})
 
 add_library(${PROJECT_NAME}_world src/model_import_plugin.cpp)

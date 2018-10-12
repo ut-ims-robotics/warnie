@@ -93,6 +93,8 @@
       <subsamples>50</subsamples>
       <data_path>/home/robert/robosemiotics_study/</data_path>
     </plugin>
+
+    <plugin name="pose_resetter" filename="libvisual_cue_plugin_model_reset.so"/>
   </gazebo>
 
 </robot>

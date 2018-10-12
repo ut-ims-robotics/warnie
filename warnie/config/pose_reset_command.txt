@@ -1,0 +1,27 @@
+rostopic pub /reset_model std_msgs/Float32MultiArray "layout:
+  dim:
+  - label: ''
+    size: 0
+    stride: 0
+  data_offset: 0
+data:
+- 1
+- 1
+- -101
+- 0
+- 0.5" --once
+
+rostopic pub /reset_model std_msgs/Float32MultiArray "layout:
+  dim:
+  - label: ''
+    size: 0
+    stride: 0
+  data_offset: 0
+data:
+- 1
+- 1
+- -9
+- 12
+- 0.25" --once
+
+roslaunch warnie husky_in_world.launch gazebo_world:=training_track.world joystick_enabled:=true load_rviz:=true x:=-9 y:=12
