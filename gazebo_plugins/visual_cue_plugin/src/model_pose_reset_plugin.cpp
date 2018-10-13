@@ -82,7 +82,7 @@ namespace gazebo
       ROS_INFO_STREAM("Resetting the pose");
 
       math::Pose model_pose = model->GetWorldPose();
-      model_pose.pos.Set(model_pose.pos.x, 0, model_pose.pos.z + 0.2);
+      model_pose.pos.Set(model_pose.pos.x, model_pose.pos.y, model_pose.pos.z + 0.2);
       model_pose.rot.SetFromEuler(0, 0, 0);
 
       model->SetWorldPose(model_pose);
