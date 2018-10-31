@@ -27,10 +27,10 @@ rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_lis
 # Check if the process was successful or not
 check_success "Failed to generate continuous tracks"
 
-# Generate 3 discrete tracks
-rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete.txt track_discrete_p1 false 0 15
-#rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete_p2.txt track_discrete_p2 false 0 10
-#rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete_p3.txt track_discrete_p3 false 0 10
+# Generate 9 discrete tracks
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete_p1.txt track_discrete_p1 false 0 15
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete_p2.txt track_discrete_p2 false 0 15
+rosrun warnie single_track_generator $NR_OF_TRACKS true $TRAP_LISTS_DIR/trap_list_discrete_p3.txt track_discrete_p3 false 0 15
 
 # Check if the process was successful or not
 check_success "Failed to generate discrete tracks"
@@ -58,8 +58,8 @@ for (( p=0; p < $NR_OF_PARTITIONS; p++ )); do
     TRACK_LIST_NAME=$TRACK_LIST_DIR/"track_list_p${p}_${i}_tmp.txt"
 
     echo "track_continuous_p${p_i1}_${i}, 5" >> $TRACK_LIST_NAME
-    echo "track_discrete_p1_${i}, 140" >> $TRACK_LIST_NAME
-    echo "track_biased_p${p_i3}_${i}, 270" >> $TRACK_LIST_NAME
+    echo "track_discrete_p${p_i2}_${i}, 140" >> $TRACK_LIST_NAME
+    echo "track_biased_p${p_i3}_${i}, 250" >> $TRACK_LIST_NAME
     
     rosrun warnie gazebo_world_generator study_track_${idx} /$TRACK_LIST_NAME $WORLD_OUTPUT_DIR
   done

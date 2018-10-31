@@ -1,10 +1,24 @@
 trap_d_1_2, 0
 trap_d_1_2_m, 0
 trap_d_1_2_n, 0
+trap_d_1_a, 0
+trap_d_1_a_m, 0
+trap_d_1_r, 0
+trap_d_1_r_m, 0
+
 trap_d_2_2, 0
 trap_d_2_2_m, 0
 trap_d_2_2_n, 0
+trap_d_2_a, 0
+trap_d_2_a_m, 0
+trap_d_2_r, 0
+trap_d_2_r_m, 0
+
 trap_d_3_2, 0
 trap_d_3_2_m, 0
 trap_d_3_2_n, 0
+trap_d_3_a, 0
+trap_d_3_a_m, 0
+trap_d_3_r, 0
+trap_d_3_r_m, 0
 
