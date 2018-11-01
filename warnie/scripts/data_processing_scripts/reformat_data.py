@@ -29,12 +29,26 @@ class Trap:
         self.name = name
         self.trap_type = trap_type
         self.visual_cue_boxes = []
+        self.mean_pos_x = 0.0
 
     def addVisualCueBox(self, visual_cue_box):
         self.visual_cue_boxes.append(visual_cue_box)
 
+    def calculateMeanPos(self):
+        mean_pos_x = 0.0
+
+        for box in self.visual_cue_boxes:
+            mean_pos_x += box.x
+
+        mean_pos_x /= len(self.visual_cue_boxes)
+        self.mean_pos_x = mean_pos_x
+        return mean_pos_x
+
     def toStr(self):
-        trap_str = "trap_name: " + self.name + "\ntrap_type: " + self.trap_type + "\ncue_boxes: \n"
+        trap_str = "trap_name: " + self.name + \
+                   "\ntrap_type: " + self.trap_type + \
+                   "\ntrap_mean_pos_x: " + str(self.mean_pos_x) + \
+                   "\ncue_boxes: \n"
 
         for box in self.visual_cue_boxes:
             trap_str += "    " + box.toStr() + '\n'
@@ -94,6 +108,7 @@ def rawTrapToClass(raw_trap_data):
             box_processed = VisualCueBox(box_type, box_functionality, box_x, box_y, box_z)
             trap.addVisualCueBox(box_processed)
 
+        trap.calculateMeanPos()
         trap_classes.append(trap)
 
     return trap_classes
@@ -120,6 +135,13 @@ def precategorizeTrapData(track_layout_file):
                 precat_trap_data[trap_name].append(track_element)
 
     return precat_trap_data
+
+#
+# Segment the raw trajectory data into parts that relate to a positon
+# of the trap
+#
+def segmentTrajectoryData(traps, trajectory):
+    return 3
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #
