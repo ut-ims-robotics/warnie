@@ -15,11 +15,14 @@ class VisualCueBox:
         self.z = z
 
     def toStr(self):
-        return self.cue_type + " " + self.cue_functionality + " " + str(self.x) + " " + str(self.y) + " " + str(self.z)
+        return (self.cue_type + " "
+                + self.cue_functionality + " "
+                + str(self.x) + " "
+                + str(self.y) + " "
+                + str(self.z))
 
-    def toJsonStr(self):
-        # Return Json string
-        return "1"
+    def reprJSON(self):
+        return self.__dict__
 
 #
 # Class for maintaining trap data
@@ -44,6 +47,9 @@ class Trap:
         self.mean_pos_x = mean_pos_x
         return mean_pos_x
 
+    def reprJSON(self):
+        return self.__dict__
+
     def toStr(self):
         trap_str = "trap_name: " + self.name + \
                    "\ntrap_type: " + self.trap_type + \
@@ -55,9 +61,15 @@ class Trap:
 
         return trap_str
 
-    def toJsonStr(self):
-        # Return JSON string
-        return "2"
+#
+# JSON encoder
+#
+class ComplexEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if hasattr(obj, 'reprJSON'):
+            return obj.reprJSON()
+        else:
+            return json.JSONEncoder.default(self, obj)
 
 #
 # Return trap category
@@ -151,20 +163,15 @@ def segmentTrajectoryData(traps, trajectory):
 
 in_file_trajectory_file = str(sys.argv[1])
 in_file_track_layout = str(sys.argv[2])
-# out_file_yaml = str(sys.argv[3])
+out_file_json = str(sys.argv[3])
 
 precat_trap_data = precategorizeTrapData(in_file_track_layout)
 trap_classes = rawTrapToClass(precat_trap_data)
+trap_classes_json = json.dumps(trap_classes, cls=ComplexEncoder, sort_keys=True, indent=2)
 
-for trap in trap_classes:
-    print trap.toStr()
+print trap_classes_json
 
+with open(out_file_json, 'w') as out_file:
+    out_file.write(trap_classes_json)
 
-
-# with open('data.json', 'w') as outfile:
-#     json.dump(data, outfile)
-
-# data_dictionary = {}
-# data_json = json.dumps(data_dictionary)
-# print data_json
 
