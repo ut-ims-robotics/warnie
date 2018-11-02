@@ -1,7 +1,8 @@
 import csv
 import json
 import sys
-import math
+import matplotlib.pyplot as plt
+import numpy as np
 
 #
 # Class for maintaining visual cue box data
@@ -33,6 +34,7 @@ class Trap:
         self.trap_type = trap_type
         self.visual_cue_boxes = []
         self.mean_pos_x = 0.0
+        self.trajectory_data_path = "/todo/"
 
     def addVisualCueBox(self, visual_cue_box):
         self.visual_cue_boxes.append(visual_cue_box)
@@ -149,11 +151,64 @@ def precategorizeTrapData(track_layout_file):
     return precat_trap_data
 
 #
-# Segment the raw trajectory data into parts that relate to a positon
-# of the trap
+# Segments the data based on the center point and the range around the center
 #
-def segmentTrajectoryData(traps, trajectory):
-    return 3
+def getTrajectorySegment(data, range, center_point):
+    start_idx = 0
+    end_idx = 0
+
+    start_dist = center_point - range/2
+    end_dist = center_point + range/2
+
+    start_idx_found = False
+
+    for idx, trajectory_point in enumerate(data):
+        if start_idx_found != True and trajectory_point[0] >= start_dist:
+            start_idx = idx
+            start_idx_found = True
+
+        if trajectory_point[0] >= end_dist:
+            end_idx = idx
+            break
+
+    return data[start_idx:end_idx + 1]
+
+#
+# Creates a dictionary of the box images
+#
+def createImagesDictionary(base_path):
+    images_dict = {}
+
+    images_dict['neutral'] = plt.imread(base_path + "neutral_box.png", format="png")
+    images_dict['pull'] = plt.imread(base_path + "pull_box.png", format="png")
+    images_dict['push'] = plt.imread(base_path + "push_box.png", format="png")
+
+    return images_dict
+
+#
+# Adds box images to the plot
+#
+def addBoxImages(trap_data, plot, images_dict, box_size):
+    for box in trap_data.visual_cue_boxes:
+        if "wall" not in box.cue_type:
+            box_x = box.x - trap_data.mean_pos_x
+            box_y = box.y
+            extent_x_min = box_x - box_size
+            extent_x_max = box_x + box_size
+            extent_y_min = box_y - box_size
+            extent_y_max = box_y + box_size
+
+            plot.imshow(images_dict[box.cue_type], extent=[extent_x_min, extent_x_max, extent_y_min, extent_y_max])
+
+#
+# Adds track edges to the plot
+#
+def addTrackEdges(plot, distance, width):
+    left = [[-distance/2, distance/2], [width/2, width/2]]
+    right = [[-distance/2, distance/2], [-width/2, -width/2]]
+
+    plot.plot(left[0], left[1], "b-")
+    plot.plot(right[0], right[1], "b-")
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 #
@@ -161,17 +216,43 @@ def segmentTrajectoryData(traps, trajectory):
 #
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
+# Get the paths to trajectory data, track layout data and JSON output data
 in_file_trajectory_file = str(sys.argv[1])
 in_file_track_layout = str(sys.argv[2])
 out_file_json = str(sys.argv[3])
 
+# Extract the trap classes
 precat_trap_data = precategorizeTrapData(in_file_track_layout)
 trap_classes = rawTrapToClass(precat_trap_data)
-trap_classes_json = json.dumps(trap_classes, cls=ComplexEncoder, sort_keys=True, indent=2)
 
-print trap_classes_json
+# Write the trap data to a JSON file
+# trap_classes_json = json.dumps(trap_classes, cls=ComplexEncoder, sort_keys=True, indent=2)
+# with open(out_file_json, 'w') as out_file:
+#     out_file.write(trap_classes_json)
 
-with open(out_file_json, 'w') as out_file:
-    out_file.write(trap_classes_json)
+# Open the trajectory file and convert it into numpy array
 
 
+fig, plot = plt.subplots()
+plt.axis('equal')
+plt.axis([-10, 10, -3, 3])
+
+images_dictionary = createImagesDictionary("../images/")
+
+test_trap = trap_classes[5]
+trajectory_data_np = np.genfromtxt(in_file_trajectory_file, delimiter=',', skip_header=1)
+trajectory_segment = getTrajectorySegment(trajectory_data_np, 20, test_trap.mean_pos_x)
+
+plot.plot(trajectory_segment[:, 0] - test_trap.mean_pos_x, trajectory_segment[:, 1], "k-")
+addTrackEdges(plot, 20, 5.45)
+
+addBoxImages(test_trap, plot, images_dictionary, 0.5)
+
+plt.show()
+#plt.savefig("test.png", dpi=500)
+
+
+# trajectory_csv = open(in_file_trajectory_file)
+# trajectory_reader = csv.DictReader(trajectory_csv)
+#
+# for idx, trajectory_point in enumerate(trajectory_reader):
