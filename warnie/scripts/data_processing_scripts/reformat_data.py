@@ -1,6 +1,7 @@
 import csv
 import sys
 import os
+import json
 import matplotlib.pyplot as plt
 import numpy as np
 from copy import copy
@@ -105,22 +106,33 @@ for trap_type, trap_tuples in trap_data_balanced_dict.iteritems():
     csv_data_np = copy(trap_tuples[0][1])
     csv_data_np[:, 0] = csv_data_np[:, 0] - trap_tuples[0][0].mean_pos_x
 
+    # Create the header
     for i in range(0, nr_of_subjs):
         header += single_header
 
+    # Assemble the data
     for i in range(1, len(trap_tuples)):
         csv_data_np_add = trap_tuples[i][1]
         csv_data_np_add[:, 0] = csv_data_np_add[:, 0] - trap_tuples[i][0].mean_pos_x
         csv_data_np = np.concatenate((csv_data_np, csv_data_np_add), axis=1)
 
+    output_path = in_base_path + "/data_cropped/" + trap_type + "/"
+    os.mkdir(output_path)
+
+    # Write the data to csv file
     csv_data_np = np.round(csv_data_np, decimals=3, out=None)
-
-    output_file = in_base_path + "/data_cropped/" + trap_type + ".csv"
-
-    with open(output_file, 'w') as csvfile:
+    output_file_csv = output_path + trap_type + ".csv"
+    with open(output_file_csv, 'w') as csvfile:
         writer = csv.writer(csvfile, delimiter=",")
         writer.writerow(header)
         writer.writerows(csv_data_np)
+
+    # Write the trap info to json file
+    trap_class_json = json.dumps(trap_tuples[0][0], cls=wt.ComplexEncoder, sort_keys=True, indent=2)
+    output_file_json = output_path + trap_type + ".json"
+    with open(output_file_json, 'w') as jsonfile:
+        jsonfile.write(trap_class_json)
+
 
 # Create trajectory images, one per each trap type
 # print "Creating trajectory images"
