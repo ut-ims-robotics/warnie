@@ -14,12 +14,12 @@
 
   <!-- bumper box -->
   <link name="bumper_box_link">
-    <visual>
-      <origin xyz="0 0 0" rpy="0 0 0" />
-      <geometry>
-        <mesh filename="package://warnie/robot_extras/husky/husky_bumper_box/husky_bumper_box.stl" />
-      </geometry>
-    </visual>
+<!--    <visual>-->
+<!--      <origin xyz="0 0 0" rpy="0 0 0" />-->
+<!--      <geometry>-->
+<!--        <mesh filename="package://warnie/robot_extras/husky/husky_bumper_box/husky_bumper_box.stl" />-->
+<!--      </geometry>-->
+<!--    </visual>-->
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0" />
       <geometry>

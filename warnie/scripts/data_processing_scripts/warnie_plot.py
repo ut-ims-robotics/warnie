@@ -25,7 +25,7 @@ def addBoxImages(trap_data, plot, images_dict, box_size):
             extent_y_min = box_y - box_size
             extent_y_max = box_y + box_size
 
-            plot.imshow(images_dict[box.cue_type], extent=[extent_x_min, extent_x_max, extent_y_min, extent_y_max])
+            plot.imshow(images_dict[box.cue_type], extent=[extent_x_min, extent_x_max, extent_y_min, extent_y_max]) 
 
 #
 # Adds track edges to the plot

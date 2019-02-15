@@ -31,35 +31,42 @@ trajectory_data_dict = wtr.createTrajectoryDataDict(data_paths, in_base_path)
 for trap_type, trap_tuples in trajectory_data_dict.iteritems():
 
     print "Working on trap '" + trap_type + "'"
-    plt.subplot(2, 1, 1)
-    plt.axis('equal')
+    # plt.subplot(2, 1, 1)
+    # plt.tight_layout()
     plt.axis([-10, 10, -3, 3])
+
+    # plt.axis('square')
+    #plt.gca().set_aspect('equal')
+
+
     wp.addTrackEdges(plt, 20, 5.45)
     wp.addBoxImages(trap_tuples[0][0], plt, images_dictionary, 0.35)
 
-    # Iterate through all trap data segments per current trap type
+    # Plot position - Iterate through all trap data segments per current trap type
     for trap_tuple in trap_tuples:
         trap_class = trap_tuple[0]
         trajectory_segment = trap_tuple[1]
 
         plt.plot(trajectory_segment[:, 0] - trap_class.mean_pos_x, trajectory_segment[:, 1], "k-", alpha=0.2)
 
-    plt.subplot(2, 1, 2)
-    plt.axis('equal')
-    plt.axis([-10, 10, 0, 4])
+    # plt.subplot(2, 1, 2)
+    # plt.axis('equal')
+    # plt.axis([-10, 10, 0, 4])
 
-    # Iterate through all trap data segments per current trap type
-    for trap_tuple in trap_tuples:
-        trap_class = trap_tuple[0]
-        trajectory_segment = trap_tuple[1]
+    # # Plot velocity - Iterate through all trap data segments per current trap type
+    # for trap_tuple in trap_tuples:
+    #     trap_class = trap_tuple[0]
+    #     trajectory_segment = trap_tuple[1]
 
-        plt.plot(trajectory_segment[:, 0] - trap_class.mean_pos_x, trajectory_segment[:, 5], "k-", alpha=0.2)
+    #     plt.plot(trajectory_segment[:, 0] - trap_class.mean_pos_x, trajectory_segment[:, 5], "k-", alpha=0.2)
 
     #Save the figure
-    plt.savefig(in_base_path + "/data_visual/data_vis_vel/" + trap_type, dpi=500)
+    plt.savefig("testu.svg", format="svg", dpi=500, frameon=None)
+    break
+    # plt.savefig(in_base_path + "/data_visual/data_vis_vel/" + trap_type, dpi=500)
 
     # Clear the plot
-    plt.clf()
+    # plt.clf()
     # plt.show()
     # break
 
