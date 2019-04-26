@@ -5,7 +5,7 @@ This is a ROS package that contains all cad models, setup/data processing/execut
 ## Reference
 If you are using any assets provided by this package in your publishable research, then you can refer to:
 ```
-@INPROCEEDINGS{VunderSA2018, 
+@INPROCEEDINGS{, 
 author={}, 
 booktitle={}, 
 title={}, 
